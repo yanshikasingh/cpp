@@ -371,7 +371,7 @@
 * [x] Stack
 * [x] Heap
 * [x] Static memory
-* [ ] Global memory
+* [x] Global memory
 * [ ] Memory allocation
 * [ ] Object lifetime
 * [ ] Scope vs lifetime
