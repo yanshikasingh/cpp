@@ -368,9 +368,9 @@
 
 ### 8.1 Memory Concepts
 
-* [ ] Stack
-* [ ] Heap
-* [ ] Static memory
+* [x] Stack
+* [x] Heap
+* [x] Static memory
 * [ ] Global memory
 * [ ] Memory allocation
 * [ ] Object lifetime
