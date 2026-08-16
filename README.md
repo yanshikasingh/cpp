@@ -8,78 +8,78 @@
 
 ### 1.1 Introduction
 
-* [ ] Introduction to C++
-* [ ] History and features of C++
-* [ ] C++ vs C
-* [ ] Compilation and execution process
-* [ ] Source code, object code, executable
-* [ ] Compiler vs interpreter
+* [D] Introduction to C++
+* [D] History and features of C++
+* [D] C++ vs C
+* [D] Compilation and execution process
+* [D] Source code, object code, executable
+* [D] Compiler vs interpreter
 
 ### 1.2 Basic Program Structure
 
-* [ ] `#include`
-* [ ] `main()`
-* [ ] Header files
-* [ ] Statements
-* [ ] Comments
-* [ ] Namespaces
-* [ ] `std` namespace
+* [D] `#include`
+* [D] `main()`
+* [D] Header files
+* [D] Statements
+* [D] Comments
+* [D] Namespaces
+* [D] `std` namespace
 
 ### 1.3 Variables and Constants
 
-* [ ] Variables
-* [ ] Constants
-* [ ] Declaration and initialization
-* [ ] Scope of variables
-* [ ] `const`
-* [ ] `constexpr`
-* [ ] Global vs local variables
-* [ ] `static` variables
+* [D] Variables
+* [D] Constants
+* [D] Declaration and initialization
+* [D] Scope of variables
+* [D] `const`
+* [D] `constexpr`
+* [D] Global vs local variables
+* [D] `static` variables
 
 ### 1.4 Data Types
 
-* [ ] `int`
-* [ ] `short`
-* [ ] `long`
-* [ ] `long long`
-* [ ] `float`
-* [ ] `double`
-* [ ] `long double`
-* [ ] `char`
-* [ ] `bool`
-* [ ] `void`
-* [ ] `string`
-* [ ] Signed vs unsigned types
-* [ ] Type modifiers
+* [D] `int`
+* [D] `short`
+* [D] `long`
+* [D] `long long`
+* [D] `float`
+* [D] `double`
+* [D] `long double`
+* [D] `char`
+* [D] `bool`
+* [D] `void`
+* [D] `string`
+* [D] Signed vs unsigned types
+* [D] Type modifiers
 
 ### 1.5 Type Conversion
 
-* [ ] Implicit conversion
-* [ ] Explicit conversion
-* [ ] C-style casting
-* [ ] `static_cast`
-* [ ] `dynamic_cast`
-* [ ] `const_cast`
-* [ ] `reinterpret_cast`
+* [D] Implicit conversion
+* [D] Explicit conversion
+* [D] C-style casting
+* [D] `static_cast`
+* [D] `dynamic_cast`
+* [D] `const_cast`
+* [D] `reinterpret_cast`
 
 ### 1.6 Operators
 
-* [ ] Arithmetic operators
-* [ ] Relational operators
-* [ ] Logical operators
-* [ ] Assignment operators
-* [ ] Compound assignment operators
-* [ ] Increment/decrement operators
-* [ ] Bitwise operators
-* [ ] Ternary operator
-* [ ] `sizeof`
-* [ ] Operator precedence
-* [ ] Operator associativity
+* [D] Arithmetic operators
+* [D] Relational operators
+* [D] Logical operators
+* [D] Assignment operators
+* [D] Compound assignment operators
+* [D] Increment/decrement operators
+* [D] Bitwise operators
+* [D] Ternary operator
+* [D] `sizeof`
+* [D] Operator precedence
+* [D] Operator associativity
 
 ### 1.7 Input / Output
 
-* [ ] `cin`
-* [ ] `cout`
+* [D] `cin`
+* [D] `cout`
 * [ ] `cerr`
 * [ ] `clog`
 * [ ] `getline()`
@@ -92,34 +92,34 @@
 
 ### 2.1 Conditional Statements
 
-* [ ] `if`
-* [ ] `if-else`
-* [ ] `else-if`
-* [ ] Nested `if`
-* [ ] Nested conditional statements
-* [ ] Conditional operator `?:`
+* [D] `if`
+* [D] `if-else`
+* [D] `else-if`
+* [D] Nested `if`
+* [D] Nested conditional statements
+* [D] Conditional operator `?:`
 
 ### 2.2 Switch Statements
 
-* [ ] `switch`
-* [ ] `case`
-* [ ] `default`
-* [ ] `break`
+* [D] `switch`
+* [D] `case`
+* [D] `default`
+* [D] `break`
 
 ### 2.3 Loops
 
-* [ ] `for`
-* [ ] `while`
-* [ ] `do-while`
-* [ ] Nested loops
-* [ ] Range-based `for`
+* [D] `for`
+* [D] `while`
+* [D] `do-while`
+* [D] Nested loops
+* [D] Range-based `for`
 
 ### 2.4 Loop Control
 
-* [ ] `break`
-* [ ] `continue`
-* [ ] `goto`
-* [ ] Infinite loops
+* [D] `break`
+* [D] `continue`
+* [D] `goto`
+* [D] Infinite loops
 
 ---
 
@@ -127,13 +127,13 @@
 
 ### 3.1 Basics
 
-* [ ] Function declaration
-* [ ] Function definition
-* [ ] Function calling
-* [ ] Parameters
-* [ ] Arguments
-* [ ] Return values
-* [ ] `void` functions
+* [D] Function declaration
+* [D] Function definition
+* [D] Function calling
+* [D] Parameters
+* [D] Arguments
+* [D] Return values
+* [D] `void` functions
 
 ### 3.2 Function Parameters
 
