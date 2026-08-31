@@ -1,0 +1,2 @@
+Q1.are solid principle only applied on classes or functions ??or only needed with object oriented language??
+(Answer:the answer to this question this rules are made for classes but it is a good practice to use them for functions because as we only make functions for performing one task)
