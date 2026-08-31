@@ -13,15 +13,6 @@
 
 #include <stdio.h>
 
-/*
-==================================================
-              FUNCTION VS CLASS
-==================================================
-A function is a block of code designed to perform
-a specific task. It is called whenever that task
-needs to be performed.
-*/
-// FUNCTION
 void inputArray(int arr[], int s)
 {
     for (int i = 0; i <= s; i++)
@@ -45,13 +36,7 @@ void PrintArray(int arr[], int s)
         printf("%d  ", i + 1);
     }
 }
-/*
-A class is a blueprint used in C++ to group related
-data and functions together. C supports functions
-but does not support classes.Has a semi colon at last
 
-==================================================
-*/
 
 void SumOfOdd(int arr[], int s)
 {
