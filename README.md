@@ -209,7 +209,7 @@
 - [x] `tolower()`
 
 
-### 5.1 C-Style Strings
+### 5.2 C-Style Strings
 
 * [ ] Character arrays
 * [ ] `strlen()`
@@ -217,7 +217,7 @@
 * [ ] `strcmp()`
 * [ ] `strcat()`
 
-### 5.2 `std::string`
+### 5.3 `std::string`
 
 * [ ] String declaration
 * [ ] String initialization
@@ -235,7 +235,7 @@
 * [ ] String traversal
 * [ ] `getline()`
 
-### 5.3 String Utilities
+### 5.4 String Utilities
 
 * [ ] `stringstream`
 * [ ] `istringstream`
