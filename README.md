@@ -196,21 +196,17 @@
 
 # 5. Strings
 
-
-
-
 ## 5.1 Character Functions
-[svg](https://github.com/yanshikasingh/cpp/tree/main#51-character-functions)
 
-- `isalpha()`
-- `isdigit()`
-- `isalnum()`
-- `islower()`
-- `isupper()`
-- `isspace()`
-- `ispunct()`
-- `toupper()`
-- `tolower()`
+- [x] `isalpha()`
+- [x] `isdigit()`
+- [x] `isalnum()`
+- [x] `islower()`
+- [x] `isupper()`
+- [x] `isspace()`
+- [x] `ispunct()`
+- [x] `toupper()`
+- [x] `tolower()`
 
 
 ### 5.1 C-Style Strings
