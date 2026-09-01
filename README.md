@@ -211,11 +211,23 @@
 
 ### 5.2 C-Style Strings
 
-* [ ] Character arrays
-* [ ] `strlen()`
-* [ ] `strcpy()`
-* [ ] `strcmp()`
-* [ ] `strcat()`
+
+- [x] Character arrays
+- [x] Null terminator (`'\0'`)
+- [x] Traversing C-style strings
+- [x] `strlen()` — String length
+- [x] `strcpy()` — Copying
+- [x] `strcat()` — Concatenation
+- [x] `strcmp()` — Comparison
+- [x] `strchr()` — Searching for a character
+- [x] `strstr()` — Searching for a substring
+- [x] String modification
+- [x] Reversing a string
+- [x] Case conversion (`toupper()` / `tolower()`)
+- [x] Tokenization (`strtok()`)
+- [x] Input / Output (`cin`, `cin.getline()`, `cout`)
+- [x] Character pointers and C-style strings
+
 
 ### 5.3 `std::string`
 
