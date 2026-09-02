@@ -231,7 +231,7 @@
 ### 5.3 `std::string`
 [svg](https://github.com/yanshikasingh/cpp#53-stdstring)
 
-# Basics
+##### Basics
 - [x] String declaration
 - [x] String initialization
 - [x] String concatenation
@@ -239,7 +239,7 @@
 - [x] String length: `size()` vs `length()`
 - [x] Character access: `[]` and `.at()`
 
-# String Modification
+##### String Modification
 - [x] `substr()`
 - [x] `replace()`
 - [x] `insert()`
@@ -247,29 +247,29 @@
 - [x] `push_back()`
 - [x] `pop_back()`
 
-# Searching
+##### Searching
 - [x] `find()`
 - [x] `string::npos`
 
-# Traversal
+##### Traversal
 - [x] Index-based traversal
 - [x] Range-based `for` loop
 - [x] Modifying characters using references (`char&`)
 
-# Input
+##### Input
 - [x] `getline()`
 - [x] Custom delimiters
 - [x] `cin` and `getline()` input buffer problem
 - [x] `cin.ignore()`
 - [x] `numeric_limits<streamsize>::max()`
 
-# Memory and Performance
+##### Memory and Performance
 - [x] `std::string` as an object
 - [x] `size()` vs `capacity()`
 - [x] `reserve()`
 - [x] String reallocation basics
 
-# Important Concepts
+##### Important Concepts
 - [x] Lexicographical comparison
 - [x] Case-sensitive comparison
 - [x] `std::string` vs C-style strings
