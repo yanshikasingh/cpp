@@ -197,7 +197,7 @@
 # 5. Strings
 
 ## 5.1 Character Functions
-[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.1-Character_Functions.md)
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.1_C-Style_Strings.md)
 
 
 - [x] `isalpha()`
@@ -212,7 +212,7 @@
 
 
 ### 5.2 C-Style Strings
-[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.2-C-Style_Strings.md)
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.2_C-Style_Strings.md)
 
 - [x] Character arrays
 - [x] Null terminator (`'\0'`)
