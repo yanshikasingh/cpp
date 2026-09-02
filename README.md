@@ -228,24 +228,55 @@
 - [x] Input / Output (`cin`, `cin.getline()`, `cout`)
 - [x] Character pointers and C-style strings
 
-
 ### 5.3 `std::string`
+[svg](https://github.com/yanshikasingh/cpp#53-stdstring)
 
-* [ ] String declaration
-* [ ] String initialization
-* [ ] String concatenation
-* [ ] String comparison
-* [ ] String length
-* [ ] Character access
-* [ ] `substr()`
-* [ ] `find()`
-* [ ] `replace()`
-* [ ] `insert()`
-* [ ] `erase()`
-* [ ] `push_back()`
-* [ ] `pop_back()`
-* [ ] String traversal
-* [ ] `getline()`
+#### Basics
+- [x] String declaration
+- [x] String initialization
+- [x] String concatenation
+- [x] String comparison
+- [x] String length: `size()` vs `length()`
+- [x] Character access: `[]` and `.at()`
+
+#### String Modification
+- [x] `substr()`
+- [x] `replace()`
+- [x] `insert()`
+- [x] `erase()`
+- [x] `push_back()`
+- [x] `pop_back()`
+
+#### Searching
+- [x] `find()`
+- [x] `string::npos`
+
+#### Traversal
+- [x] Index-based traversal
+- [x] Range-based `for` loop
+- [x] Modifying characters using references (`char&`)
+
+#### Input
+- [x] `getline()`
+- [x] Custom delimiters
+- [x] `cin` and `getline()` input buffer problem
+- [x] `cin.ignore()`
+- [x] `numeric_limits<streamsize>::max()`
+
+#### Memory and Performance
+- [x] `std::string` as an object
+- [x] `size()` vs `capacity()`
+- [x] `reserve()`
+- [x] String reallocation basics
+
+#### Important Concepts
+- [x] Lexicographical comparison
+- [x] Case-sensitive comparison
+- [x] `std::string` vs C-style strings
+- [x] Common mistakes and undefined behavior
+
+---
+
 
 ### 5.4 String Utilities
 
@@ -257,6 +288,54 @@
 * [ ] String searching
 * [ ] String manipulation
 
+### Remaining `std::string` Topics
+
+#### Basic Operations
+- [ ] `empty()`
+- [ ] `clear()`
+- [ ] `append()`
+- [ ] `front()`
+- [ ] `back()`
+- [ ] `swap()`
+- [ ] `compare()`
+
+#### Advanced Searching
+- [ ] `rfind()`
+- [ ] `find_first_of()`
+- [ ] `find_last_of()`
+- [ ] `find_first_not_of()`
+- [ ] `find_last_not_of()`
+
+#### Iterators and Algorithms
+- [ ] String iterators: `begin()` and `end()`
+- [ ] Reverse iterators: `rbegin()` and `rend()`
+- [ ] Reversing strings using `std::reverse()`
+
+#### Character Handling
+- [ ] `isdigit()`
+- [ ] `isalpha()`
+- [ ] `isalnum()`
+- [ ] `isspace()`
+- [ ] `islower()`
+- [ ] `isupper()`
+- [ ] `tolower()`
+- [ ] `toupper()`
+
+#### Conversion and Parsing
+- [ ] `stoi()`
+- [ ] `stol()`
+- [ ] `stoll()`
+- [ ] `stof()`
+- [ ] `stod()`
+- [ ] `to_string()`
+- [ ] `stringstream`
+- [ ] Basic string parsing and tokenization
+
+#### Advanced Topics
+- [ ] `std::string_view`
+- [ ] Efficient string building
+- [ ] Unicode and UTF-8 basics
+- [ ] Move semantics with `std::string`
 ---
 
 # 6. Pointers and References
