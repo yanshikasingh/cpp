@@ -197,6 +197,8 @@
 # 5. Strings
 
 ## 5.1 Character Functions
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.1-Character_Functions.md)
+
 
 - [x] `isalpha()`
 - [x] `isdigit()`
@@ -210,7 +212,7 @@
 
 
 ### 5.2 C-Style Strings
-
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.2-C-Style_Strings.md)
 
 - [x] Character arrays
 - [x] Null terminator (`'\0'`)
@@ -229,7 +231,7 @@
 - [x] Character pointers and C-style strings
 
 ### 5.3 `std::string`
-[svg](https://github.com/yanshikasingh/cpp#53-stdstring)
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.3_std_string.md)
 
  Basics
 - [x] String declaration
@@ -279,64 +281,116 @@ Memory and Performance
 
 
 ### 5.4 String Utilities
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.4_String_Utilities.md)
+
+String Streams
 
 * [ ] `stringstream`
 * [ ] `istringstream`
 * [ ] `ostringstream`
-* [ ] String conversion
-* [ ] Character classification
-* [ ] String searching
-* [ ] String manipulation
 
-### Remaining `std::string` Topics
+String Conversion
 
-#### Basic Operations
-- [ ] `empty()`
-- [ ] `clear()`
-- [ ] `append()`
-- [ ] `front()`
-- [ ] `back()`
-- [ ] `swap()`
-- [ ] `compare()`
+* [ ] `stoi()`
+* [ ] `stol()`
+* [ ] `stoll()`
+* [ ] `stof()`
+* [ ] `stod()`
+* [ ] `to_string()`
 
-#### Advanced Searching
-- [ ] `rfind()`
-- [ ] `find_first_of()`
-- [ ] `find_last_of()`
-- [ ] `find_first_not_of()`
-- [ ] `find_last_not_of()`
+String Searching
 
-#### Iterators and Algorithms
-- [ ] String iterators: `begin()` and `end()`
-- [ ] Reverse iterators: `rbegin()` and `rend()`
-- [ ] Reversing strings using `std::reverse()`
+* [ ] `rfind()`
+* [ ] `find_first_of()`
+* [ ] `find_last_of()`
+* [ ] `find_first_not_of()`
+* [ ] `find_last_not_of()`
 
-#### Character Handling
-- [ ] `isdigit()`
-- [ ] `isalpha()`
-- [ ] `isalnum()`
-- [ ] `isspace()`
-- [ ] `islower()`
-- [ ] `isupper()`
-- [ ] `tolower()`
-- [ ] `toupper()`
+String Manipulation
 
-#### Conversion and Parsing
-- [ ] `stoi()`
-- [ ] `stol()`
-- [ ] `stoll()`
-- [ ] `stof()`
-- [ ] `stod()`
-- [ ] `to_string()`
-- [ ] `stringstream`
-- [ ] Basic string parsing and tokenization
+* [ ] `empty()`
+* [ ] `clear()`
+* [ ] `append()`
+* [ ] `front()`
+* [ ] `back()`
+* [ ] `swap()`
+* [ ] `compare()`
 
-#### Advanced Topics
-- [ ] `std::string_view`
-- [ ] Efficient string building
-- [ ] Unicode and UTF-8 basics
-- [ ] Move semantics with `std::string`
+Iterators and Algorithms
+
+* [ ] String iterators: `begin()` and `end()`
+* [ ] Reverse iterators: `rbegin()` and `rend()`
+* [ ] Reversing strings using `std::reverse()`
+
+Parsing and Tokenization
+
+* [ ] Basic string parsing
+* [ ] String tokenization
+* [ ] Splitting strings
+* [ ] Removing leading and trailing whitespace
+
+Advanced String Concepts
+
+* [ ] Efficient string building
+* [ ] `std::string_view`
+* [ ] Unicode and UTF-8 basics
+* [ ] Move semantics with `std::string`
+
 ---
+
+### 5.5 Advanced String Concepts
+
+[svg](https://github.com/yanshikasingh/cpp/blob/main/Strings/5.5_Advanced_String_Concepts.md)
+
+Memory and Performance
+
+* [ ] Small String Optimization (SSO)
+* [ ] String allocation and reallocation
+* [ ] `reserve()` in depth
+* [ ] `shrink_to_fit()`
+* [ ] Avoiding unnecessary string copies
+* [ ] Copying vs moving strings
+* [ ] Move semantics and `std::move()`
+
+Views and References
+
+* [ ] `std::string_view`
+* [ ] `data()` and `c_str()`
+* [ ] Interoperability with C-style strings
+* [ ] Lifetime issues with `std::string_view`
+
+Modern C++ String Features
+
+* [ ] Raw string literals (`R"(...)`)
+* [ ] User-defined string literals
+* [ ] String literals and their types
+* [ ] `std::string_literals`
+
+Text Encoding
+
+* [ ] ASCII
+* [ ] Character encoding basics
+* [ ] Unicode
+* [ ] UTF-8
+* [ ] UTF-16 and UTF-32
+* [ ] Multibyte characters
+* [ ] Why `string.size()` may differ from visible character count
+
+Advanced Processing
+
+* [ ] Regular expressions (`std::regex`)
+* [ ] `regex_match()`
+* [ ] `regex_search()`
+* [ ] `regex_replace()`
+* [ ] Advanced text parsing
+
+Professional Concepts
+
+* [ ] Exception safety with string operations
+* [ ] Iterator invalidation
+* [ ] String complexity and time analysis
+* [ ] Choosing between `std::string`, `std::string_view`, and C-style strings
+
 
 # 6. Pointers and References
 
