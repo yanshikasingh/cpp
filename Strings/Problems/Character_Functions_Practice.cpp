@@ -336,15 +336,23 @@ when compiling this file.
 string input_2()
 {
    string str;
-   cin >> str;
-   cout << "Your Outout is :" << str;
+
+   cout << "\nEnter text (type 'end' to stop):\n";
+   // getline(cin, str);
+
+   while (str != "end1")
+   {
+      // process str here
+      getline(cin, str);
+   }
+
    return str;
 }
 
 void countstring(string str)
 {
    int aplhacout = 0, digicount = 0, puncount = 0, noncount = 0;
-   for (int i = 0; str[i] != '\0'; i++)
+   for (int i = 0; i < str.length(); i++)
    {
       if (isalpha(str[i]))
       {
@@ -358,16 +366,19 @@ void countstring(string str)
       {
          puncount++;
       }
-      else
+      else if (isspace(str[i]))
       {
          noncount++;
       }
+      else
+      {
+         break;
+      }
    }
 
-   cout << "The number of aplhabet in your string" << aplhacout;
-   cout << "The number of digit in your string" << digicount;
-   cout << "The number of punctuation your string" << puncount;
-   cout << "The number of non character word in your string" << noncount;
+   cout << "\nThe number of aplhabet in your string : " << aplhacout;
+   cout << "\nThe number of digit in your string: " << digicount;
+   cout << "\nThe number of punctuation your string: " << puncount;
 }
 
 /*
@@ -375,20 +386,196 @@ void countstring(string str)
 WHAT I LEARNED
 ------------------------------------------------------------
 
+/*
+============================================================
+        GETLINE() AND STRING DELIMITER
+============================================================
 
+getline() is used to read a complete line of input,
+including spaces.
 
+The basic syntax is:
+
+    getline(cin, str);
+
+This reads the complete line and stops when the user
+presses Enter.
 
 ------------------------------------------------------------
-MISTAKES / DEBUGGING NOTES
+1. CAN WE WRITE 'end' AS A DELIMITER?
 ------------------------------------------------------------
 
+NO.
 
+This is incorrect:
 
+    getline(cin, str, 'end');
 
-============================================================
-END QUESTION 02
-============================================================
+Why?
+
+The third argument of getline() must be a SINGLE CHARACTER
+(char), not a word or string.
+
+For example:
+
+    getline(cin, str, '#');
+
+Here '#' is a single character, so it is a valid delimiter.
+
+This means:
+
+    Keep reading until '#' is encountered.
+
+------------------------------------------------------------
+2. 'end' vs "end"
+------------------------------------------------------------
+
+'end'    -> INCORRECT for the word end
+
+"end"    -> CORRECT string
+
+Single quotes are used for a single character:
+
+    'a'
+    '5'
+    '#'
+
+Double quotes are used for strings:
+
+    "end"
+    "hello"
+    "123"
+
+Therefore:
+
+    'end'     ❌
+    "end"     ✅
+
+------------------------------------------------------------
+3. IF WE WANT TO STOP WHEN THE USER TYPES "end"
+------------------------------------------------------------
+
+We cannot directly write:
+
+    getline(cin, str, "end");     // ❌
+
+Instead, first read the complete line:
+
+    getline(cin, str);
+
+Then compare the string with "end":
+
+    if (str == "end")
+    {
+        // stop
+    }
+
+------------------------------------------------------------
+4. USING "end" WITH A LOOP
+------------------------------------------------------------
+
+Example:
+
 */
+
+// #include <iostream>
+// #include <string>
+
+// using namespace std;
+
+// int main()
+// {
+//     string str;
+
+//     cout << "Enter text (type 'end' to stop):\n";
+
+//     getline(cin, str);
+
+//     while (str != "end")
+//     {
+//         cout << "You entered: " << str << endl;
+
+//         getline(cin, str);
+//     }
+
+//     cout << "Input stopped.";
+
+//     return 0;
+// }
+
+/*
+------------------------------------------------------------
+EXAMPLE INPUT
+------------------------------------------------------------
+
+ynashika 2235 asfdihsw
+hello @@@ 123
+C++ programming
+end
+
+------------------------------------------------------------
+WHAT HAPPENS?
+------------------------------------------------------------
+
+1. getline() reads:
+
+       ynashika 2235 asfdihsw
+
+2. "end" is compared with the input:
+
+       str != "end"
+
+   Since it is not "end", the loop continues.
+
+3. The next line is read.
+
+4. This continues until the user enters:
+
+       end
+
+5. When:
+
+       str == "end"
+
+   becomes true, the loop stops.
+
+IMPORTANT:
+
+The word "end" is NOT processed as part of the input.
+
+------------------------------------------------------------
+KEY POINT
+------------------------------------------------------------
+
+getline() delimiter:
+
+    getline(cin, str, '#');
+
+    '#' → one character
+
+Stopping using a word:
+
+    getline(cin, str);
+
+    if (str == "end")
+
+    "end" → string
+
+So:
+
+    getline(cin, str, 'end');      ❌
+    getline(cin, str, "end");     ❌
+    getline(cin, str);            ✅
+    if (str == "end")             ✅
+
+============================================================
+
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --MISTAKES / DEBUGGING NOTES-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+    == == == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
+    END QUESTION 02 == == == == == == == == == == == == == == == == == == == == == == == == == == == == == ==
+    */
 
 /*
 ============================================================
@@ -1470,14 +1657,51 @@ TOPIC COVERAGE
 END TOPIC PRACTICE
 ============================================================
 */
-
 int main()
 {
-   char ch;
-string str;
-   ch = input_1();
+   int choice;
 
-   check(ch);
-   // coutchar(ch);
+   do
+   {
+      cout << "\n===== CHARACTER FUNCTIONS MENU =====\n";
+      cout << "1. Character Classifier\n";
+      cout << "2. Character Statistics (type 'end' to stop)\n";
+      cout << "3. Exit\n";
+
+      cout << "Enter your choice: ";
+      cin >> choice;
+
+      switch (choice)
+      {
+      case 1:
+      {
+         char ch;
+
+         ch = input_1();
+         check(ch);
+
+         break;
+      }
+
+      case 2:
+      {
+         string str;
+
+         str = input_2();
+         countstring(str);
+
+         break;
+      }
+
+      case 3:
+         cout << "\nProgram ended.";
+         break;
+
+      default:
+         cout << "\nInvalid choice!";
+      }
+
+   } while (choice != 3);
+
    return 0;
 }
