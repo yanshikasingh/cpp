@@ -336,16 +336,29 @@ when compiling this file.
 string input_2()
 {
    string str;
+   string xyz;
 
    cout << "\nEnter text (type 'end' to stop):\n";
-   // getline(cin, str);
+   getline(cin, str);
 
-   while (str != "end1")
+   while (xyz.find("end") == string::npos)
    {
       // process str here
-      getline(cin, str);
-   }
+      getline(cin, xyz);
 
+      for (int i = 0; i < xyz.length(); i++)
+      {
+
+         char yz = xyz[i];
+         str.push_back(yz);
+      }
+
+      if (xyz.find("end") != string::npos)
+      {
+         break;
+      }
+   }
+   // cout << str;
    return str;
 }
 
@@ -376,9 +389,10 @@ void countstring(string str)
       }
    }
 
-   cout << "\nThe number of aplhabet in your string : " << aplhacout;
+   cout << "\nThe number of aplhabet in your string : " << aplhacout - 3;
    cout << "\nThe number of digit in your string: " << digicount;
    cout << "\nThe number of punctuation your string: " << puncount;
+   cout << "\nThe number of punctuation your string: " << noncount;
 }
 
 /*
@@ -387,6 +401,15 @@ WHAT I LEARNED
 ------------------------------------------------------------
 
 /*
+
+It means your break; is inside an if/else, but the if/else itself is not inside a for, while, or switch.
+
+
+
+
+
+
+
 ============================================================
         GETLINE() AND STRING DELIMITER
 ============================================================

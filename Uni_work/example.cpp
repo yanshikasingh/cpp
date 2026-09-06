@@ -18,3 +18,20 @@ cout << (*itr).first << " " << (*itr).second << "\n";
 }
 
 return 0;}
+
+getline(cin, str);
+
+if (str != "end")
+{
+    getline(cin, xyz);
+
+    for (int i = 0; i < xyz.length(); i++)
+    {
+        char yz = xyz[i];
+        str.push_back(yz);
+    }
+}
+else
+{
+    break;
+}
