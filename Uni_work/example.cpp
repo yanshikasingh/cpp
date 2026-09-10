@@ -1,37 +1,88 @@
-#include<iostream>
-#include<map>
-#include<string>
+#include <stdio.h>
+#include <stdlib.h>
 
-using namespace std;
+typedef struct node
+{
+    int data;
+    struct node *next;
+} node;
 
-int main(){
-
-
-    int num = 0500;
-    cout<<num;
-map<string,int> student ={{"Yash",7800},{"Yukta",5555},{"Ritesh",8088},{"Vaibhav",0500}};
-student.insert({"Yanshika",1276});
-map<string,int> :: iterator itr;
-for(itr = student.begin(); itr != student.end();itr++){
-cout << (*itr).first << " " << (*itr).second << "\n";
-
+struct node *create_node()
+{
+    struct node *head = NULL;
+    return head;
 }
 
-return 0;}
-
-getline(cin, str);
-
-if (str != "end")
+void insertBeg(struct node *head)
 {
-    getline(cin, xyz);
-
-    for (int i = 0; i < xyz.length(); i++)
+    struct node *ptr = (struct node *)malloc(sizeof(struct node));
+    printf("Enter element : ");
+    scanf("%d", ptr->data);
+    if (head == NULL)
     {
-        char yz = xyz[i];
-        str.push_back(yz);
+        head = ptr;
+        printf("%d inserted\n", ptr->data);
+    }
+    else
+    {
+        ptr->next = head;
+        head = ptr;
+        printf("%d inserted\n", ptr->data);
     }
 }
-else
+void insertEnd(struct node *head)
 {
-    break;
+    struct node *ptr = (struct node *)malloc(sizeof(struct node));
+    printf("Enter element : ");
+    scanf("%d", ptr->data);
+    if (head == NULL)
+    {
+        head = ptr;
+        printf("%d inserted(empty)\n", ptr->data);
+    }
+    else
+    {
+        struct node *temp = head;
+        while (temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        temp->next = ptr;
+        ptr->next = NULL;
+    }
+}
+
+void dis(struct node *head)
+{
+    struct node *temp = head;
+    while (temp != NULL)
+    {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+void Free(struct node *head1)
+{
+    while (head1 != NULL)
+    {
+        struct node *temp = head1;
+        head1 = head1->next;
+        free(temp);
+    }
+    free(head1);
+}
+
+int main()
+{
+    struct node *head1 = create_node();
+    insertBeg(head1);
+    insertEnd(head1);
+    insertEnd(head1);
+    insertEnd(head1);
+    dis(head1);
+    Free(head1);
+
+    return 0;
 }
