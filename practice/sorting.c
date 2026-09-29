@@ -46,6 +46,19 @@ void bubbleSort(int arr[], int size)
     printf("how many times did the loop ran: %d \n", loopran);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 int main()
 {
     int arr[] = {1, 2, 3, 4, 5};

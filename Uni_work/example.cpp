@@ -1,3 +1,5 @@
+// Insertion in Linear Linked List
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,82 +9,197 @@ typedef struct node
     struct node *next;
 } node;
 
-struct node *create_node()
+void insert_at_beg();
+void insert_at_end();
+void insert_at_loc();
+void disp();
+
+node *start = NULL;
+
+int main()
 {
-    struct node *head = NULL;
-    return head;
+    int ch;
+
+    while (1)
+    {
+        printf("\n\n---- Options Are ----");
+        printf("\n1 - Insertion at beginning");
+        printf("\n2 - Insertion at end");
+        printf("\n3 - Insertion at location");
+        printf("\n4 - Display");
+        printf("\n5 - Exit");
+
+        printf("\nEnter your choice: ");
+        scanf("%d", &ch);
+
+        switch (ch)
+        {
+        case 1:
+            insert_at_beg();
+            break;
+
+        case 2:
+            insert_at_end();
+            break;
+
+        case 3:
+            insert_at_loc();
+            break;
+
+        case 4:
+            disp();
+            break;
+
+        case 5:
+            exit(0);
+
+        default:
+            printf("\nWrong Choice!");
+        }
+    }
+
+    return 0;
 }
 
-void insertBeg(struct node *head)
+// Insert at beginning
+void insert_at_beg()
 {
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
-    printf("Enter element : ");
-    scanf("%d", ptr->data);
-    if (head == NULL)
+    node *ptr;
+
+    ptr = (node *)malloc(sizeof(node));
+
+    printf("\nEnter the value: ");
+    scanf("%d", &ptr->data);
+
+    ptr->next = NULL;
+
+    if (start == NULL)
     {
-        head = ptr;
-        printf("%d inserted\n", ptr->data);
+        start = ptr;
     }
     else
     {
-        ptr->next = head;
-        head = ptr;
-        printf("%d inserted\n", ptr->data);
+        ptr->next = start;
+        start = ptr;
     }
+
+    printf("\nNode inserted successfully!");
 }
-void insertEnd(struct node *head)
+
+// Insert at end
+void insert_at_end()
 {
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
-    printf("Enter element : ");
-    scanf("%d", ptr->data);
-    if (head == NULL)
+    node *ptr;
+
+    ptr = (node *)malloc(sizeof(node));
+
+    printf("\nEnter the value: ");
+    scanf("%d", &ptr->data);
+
+    ptr->next = NULL;
+
+    if (start == NULL)
     {
-        head = ptr;
-        printf("%d inserted(empty)\n", ptr->data);
+        start = ptr;
     }
     else
     {
-        struct node *temp = head;
+        node *temp;
+        temp = start;
+
         while (temp->next != NULL)
         {
             temp = temp->next;
         }
+
         temp->next = ptr;
-        ptr->next = NULL;
     }
+
+    printf("\nNode inserted successfully!");
 }
 
-void dis(struct node *head)
+// Insert at a particular location
+void insert_at_loc()
 {
-    struct node *temp = head;
-    while (temp != NULL)
+    int loc;
+    node *ptr;
+
+    ptr = (node *)malloc(sizeof(node));
+
+    printf("\nEnter the value: ");
+    scanf("%d", &ptr->data);
+
+    ptr->next = NULL;
+
+    printf("\nEnter the location: ");
+    scanf("%d", &loc);
+
+    // If list is empty
+    if (start == NULL)
     {
-        printf("%d ", temp->data);
-        temp = temp->next;
+        if (loc == 1)
+        {
+            start = ptr;
+        }
+        else
+        {
+            printf("\nInvalid location!");
+            free(ptr);
+            return;
+        }
     }
-    printf("\n");
-}
-
-void Free(struct node *head1)
-{
-    while (head1 != NULL)
+    // Insert at beginning
+    else if (loc == 1)
     {
-        struct node *temp = head1;
-        head1 = head1->next;
-        free(temp);
+        ptr->next = start;
+        start = ptr;
     }
-    free(head1);
+    else
+    {
+        node *temp;
+        temp = start;
+
+        // Move temp to the node before required location
+        for (int i = 1; i < loc - 1 && temp != NULL; i++)
+        {
+            temp = temp->next;
+        }
+
+        if (temp == NULL)
+        {
+            printf("\nInvalid location!");
+            free(ptr);
+            return;
+        }
+
+        ptr->next = temp->next;
+        temp->next = ptr;
+    }
+
+    printf("\nNode inserted successfully!");
 }
 
-int main()
+// Display the linked list
+void disp()
 {
-    struct node *head1 = create_node();
-    insertBeg(head1);
-    insertEnd(head1);
-    insertEnd(head1);
-    insertEnd(head1);
-    dis(head1);
-    Free(head1);
+    node *temp;
 
-    return 0;
+    temp = start;
+
+    if (temp == NULL)
+    {
+        printf("\nList is empty");
+    }
+    else
+    {
+        printf("\nYou have entered the following data:\n");
+
+        while (temp != NULL)
+        {
+            printf("%d -> ", temp->data);
+            temp = temp->next;
+        }
+
+        printf("NULL");
+    }
 }

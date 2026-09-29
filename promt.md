@@ -388,3 +388,606 @@ This should help me understand the concept instead of memorizing it.
 **Topic:** 
 
 First, identify the **basic C++ knowledge directly required for this topic**, explain that briefly, and then teach me the main topic in depth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# C++ STL — Master Notes Generator
+
+Convert the provided YouTube transcript into **high-quality C++ STL Semester 3 notes**.
+
+The transcript is the source of the knowledge. The final result must be **independent, exam-ready notes**, not a transcript summary and not a description of the video.
+
+## Core Rules
+
+### 1. Organize by Concept, Not by Video
+
+Build one continuous C++ STL knowledge base.
+
+Never write:
+
+* "In this lecture..."
+* "The teacher explains..."
+* "In the previous lecture..."
+* "In this video..."
+* "The next lecture..."
+* "The teacher mentions..."
+
+The final notes must make complete sense without watching the video.
+
+If new information belongs to an existing concept, merge it into that concept instead of creating a new video/lecture section.
+
+---
+
+### 2. Use the Transcript as the Main Source
+
+Preserve the knowledge actually taught:
+
+* definitions
+* concepts
+* properties
+* working
+* examples
+* syntax
+* functions
+* practical techniques
+* comparisons
+* important observations
+* complexity when discussed
+
+You may correct grammar, remove filler, reorganize information and improve clarity.
+
+Do not replace the teacher's explanation with generic ChatGPT or textbook content.
+
+Do not add unrelated information simply because you know it.
+
+---
+
+### 3. Definitions Must Be Complete
+
+Every important concept should have **one complete, exam-ready definition**.
+
+The definition should include all essential information needed to identify the concept and its main purpose/characteristic.
+
+Do not split one definition into several repetitive sentences.
+
+**Good:**
+
+> **Vector:** A vector is an STL container used to store multiple elements in a dynamically resizable sequence, allowing its size to change as elements are inserted or removed.
+
+**Avoid:**
+
+> Vector is an STL container.
+> It stores elements.
+> Its size can change.
+> It can grow dynamically.
+
+Combine related information into one precise definition.
+
+Definitions should be suitable for directly writing in a university examination.
+
+---
+
+### 4. Every Sentence Must Add Information
+
+Do not repeat the same idea using different wording.
+
+Before keeping a sentence, ask:
+
+> Does this add new information?
+
+If not, merge it with another sentence or remove it.
+
+Prefer:
+
+> `push_back()` adds an element to the end of a vector.
+
+over:
+
+> `push_back()` adds an element.
+> It adds the element at the end.
+> The new element is placed at the end.
+
+Aim for **high information density**.
+
+---
+
+### 5. Detailed but Compact
+
+The notes must be:
+
+> **Very detailed in knowledge, but compact in wording.**
+
+Do not make them:
+
+* too short like revision-only notes
+* too long like a textbook
+* repetitive
+* filled with unnecessary explanations
+
+Include important details, but explain each point only once.
+
+Think:
+
+> **Dense university notes, not a textbook chapter.**
+
+
+
+
+### 5A. DETAIL WITHOUT EXCESSIVE LENGTH
+
+The notes must be **highly detailed but reasonably short**.
+
+Do not confuse detail with length.
+
+The goal is:
+
+> **Maximum relevant information in minimum necessary words.**
+
+For every concept:
+
+1. Give **one complete definition**.
+2. Include the important properties and working.
+3. Include important syntax/functions.
+4. Include **one or two useful examples** where needed.
+5. Include important exam/practical points.
+6. Remove anything that repeats information already given.
+
+### Do NOT:
+
+* write long paragraphs when bullets can express the same information
+* explain the same concept in multiple sections
+* repeat the definition in the explanation
+* give many similar examples
+* add textbook-style background that is not needed
+* explain obvious C++ syntax unnecessarily
+* expand a simple concept just to make the notes longer
+
+### DO:
+
+* combine related information
+* use tables for comparisons
+* use bullets for properties
+* use short paragraphs for concepts
+* use code only where it adds practical value
+* preserve important technical details
+* keep explanations precise
+
+### Desired style
+
+The notes should feel like:
+
+> **Detailed university notes that can be revised before an exam**
+
+and NOT:
+
+> **A complete textbook chapter**
+
+A student should be able to revise a major topic in a reasonable amount of time while still having enough information to answer theory and practical questions.
+
+---
+
+### Information Density Rule
+
+If two sentences communicate the same idea, combine them.
+
+If one sentence can communicate the idea completely, use one sentence.
+
+If a detail is useful for understanding, an exam, or practical coding, keep it.
+
+If a detail only makes the notes longer without adding knowledge, remove it.
+
+**Prioritize information over explanation length.**
+
+---
+
+### Concept Depth Rule
+
+For a major concept, aim for:
+
+```text
+Definition
+    ↓
+Important properties / working
+    ↓
+Syntax or important functions
+    ↓
+1 useful example
+    ↓
+Important exam/practical points
+```
+
+Do not automatically create all five sections.
+
+Use only what the concept actually requires.
+
+---
+
+### Final Length Check
+
+Before producing the final notes, ask:
+
+* Can any sentence be removed without losing information?
+* Can two sentences be combined?
+* Am I repeating the definition?
+* Am I giving unnecessary examples?
+* Am I explaining obvious syntax?
+* Have I preserved all important technical details?
+
+If the answer is yes, make the notes more compact.
+
+The final notes should be **shorter than a textbook but substantially more detailed than a simple summary**.
+
+---
+
+### 6. Semester 3 Exam + Practical Focus
+
+Write for a CSE Semester 3 student.
+
+Maintain a balance of approximately:
+
+**70% theory + 30% practical**
+
+#### Theory should cover, when relevant:
+
+* Definition
+* Purpose
+* Characteristics
+* Working
+* Properties
+* Important differences
+* Advantages/disadvantages
+* Important functions
+* Syntax
+* Time complexity
+* Applications
+
+#### Practical should cover, when relevant:
+
+* C++ syntax
+* Small code examples
+* Function usage
+* Important code patterns
+* Output
+* Practical observations
+* Combining STL concepts
+
+Keep practical examples small and useful.
+
+---
+
+### 7. Use Technical Language
+
+Use clear university-level technical language.
+
+Do not explain concepts like a child.
+
+Avoid unnecessary analogies such as:
+
+> "Imagine a box..."
+
+> "Think of it like a basket..."
+
+The reader already knows basic C/C++.
+
+Explain the actual technical concept directly.
+
+---
+
+### 8. Recommended Structure
+
+Use the following structure where appropriate:
+
+````markdown
+# C++ STL
+
+## 1. [Major Concept]
+
+### Definition
+
+Complete exam-ready definition.
+
+### Key Properties
+
+- Important property
+- Important property
+- Important property
+
+### Syntax
+
+```cpp
+...
+````
+
+### Example
+
+```cpp
+...
+```
+
+### Important Functions
+
+| Function | Purpose |
+| -------- | ------- |
+| `...`    | ...     |
+
+### Practical Use
+
+Short explanation of actual usage.
+
+### Important Points
+
+* ...
+* ...
+
+````
+
+Do not force every subsection.
+
+Use only the sections that are useful for the particular concept.
+
+---
+
+### 9. Functions
+
+For important STL functions, use a compact format:
+
+### `push_back()`
+
+**Purpose:** Adds an element to the end of a vector.
+
+**Syntax:**
+
+```cpp
+v.push_back(value);
+````
+
+**Example:**
+
+```cpp
+v.push_back(10);
+```
+
+**Important:** Add only genuinely useful details.
+
+Do not turn the notes into a complete API reference.
+
+---
+
+### 10. Comparisons
+
+When concepts need to be compared, use a table.
+
+Example:
+
+| Feature | `pair`                    | `vector`                 |
+| ------- | ------------------------- | ------------------------ |
+| Purpose | Stores two related values | Stores multiple elements |
+| Size    | Exactly two values        | Dynamically resizable    |
+| Access  | `.first`, `.second`       | Indexing                 |
+| Example | `pair<int,string>`        | `vector<int>`            |
+
+Do not repeat the same information in paragraphs immediately below the table.
+
+---
+
+### 11. Code
+
+Use proper C++ code blocks.
+
+Keep code examples small unless the transcript contains an important complete program.
+
+Explain only the parts relevant to the concept.
+
+Do not explain obvious syntax line-by-line.
+
+---
+
+### 12. Time Complexity
+
+Include complexity when:
+
+* it is discussed in the transcript, or
+* it is important for understanding an STL operation.
+
+Example:
+
+| Operation     | Complexity       |
+| ------------- | ---------------- |
+| `push_back()` | `O(1)` amortized |
+
+Do not create unnecessary complexity tables.
+
+---
+
+### 13. Examples
+
+Prefer examples actually used in the source material.
+
+Use additional examples only when they significantly improve understanding.
+
+One meaningful example is better than several repetitive examples.
+
+---
+
+### 14. Remove Noise
+
+Remove:
+
+* greetings
+* filler words
+* repeated explanations
+* motivational speech
+* unrelated conversation
+* pauses
+* YouTube-specific references
+* references to the lecture/video
+
+Keep all technically meaningful information.
+
+---
+
+### 15. Connect Concepts Naturally
+
+Related concepts should be connected through the content itself.
+
+For example:
+
+```markdown
+## Vector of Pairs
+
+A vector can use `pair` as its element type:
+
+vector<pair<int, int>> v;
+```
+
+Then explain how the two concepts work together.
+
+Do not write:
+
+> "This connects with the previous lecture."
+
+---
+
+### 16. Important Points
+
+At the end of a major concept, include only the most important exam/practical points.
+
+Example:
+
+### Important Points
+
+* A `pair` stores exactly two values.
+* The two values may have different data types.
+* `.first` accesses the first value.
+* `.second` accesses the second value.
+* A vector can store pairs as its elements.
+
+Do not repeat the entire section.
+
+---
+
+### 17. Quick Revision
+
+End the notes with a short revision section.
+
+```markdown
+## Quick Revision
+
+### Pair
+- Stores two related values.
+- Accessed using `.first` and `.second`.
+
+### Vector
+- Dynamically resizable STL container.
+- `push_back()` adds at the end.
+- `pop_back()` removes the last element.
+- `size()` returns the number of elements.
+```
+
+Only summarize information already present in the notes.
+
+---
+
+## Final Quality Check
+
+Before returning the notes, verify:
+
+### Content
+
+* Every important concept from the transcript is included.
+* Important teacher-given definitions are preserved.
+* Definitions are complete and exam-ready.
+* No important detail has been removed merely to shorten the notes.
+
+### No Repetition
+
+* Every sentence adds information.
+* Definitions are not repeated later.
+* The same property is not explained multiple times.
+* Tables are not followed by repetitive paragraphs.
+
+### Exam Quality
+
+* Theory is sufficient for Semester 3 exams.
+* Definitions can be written directly in an answer.
+* Important properties and differences are clear.
+* Important functions and syntax are easy to revise.
+
+### Practical Quality
+
+* C++ syntax is properly formatted.
+* Examples are meaningful and concise.
+* Important STL usage is demonstrated.
+
+### Independence
+
+* No references to lectures, videos or teachers.
+* No course progression.
+* No "previous/next lecture" language.
+* The notes stand alone as subject notes.
+
+### Length
+
+* Detailed in information.
+* Compact in wording.
+* No unnecessary textbook-style expansion.
+* No childish explanations.
+* No generic ChatGPT filler.
+
+---
+
+## Input
+
+I may provide:
+
+1. Existing C++ STL notes/context.
+2. A new YouTube transcript.
+
+Use existing notes to understand what is already covered and avoid duplication.
+
+If new information extends an existing concept, integrate it into that concept.
+
+---
+
+## Output
+
+Return **only the finished Markdown notes**.
+
+Do not explain your process.
+
+Do not mention the transcript, video or teacher.
+
+The output must be directly usable as my **C++ STL Semester 3 notes**.
+
+---
+
+## Final Principle
+
+> **Extract the knowledge → organize by concept → create complete definitions → remove repetition → add concise practical examples → make it exam-ready.**
+>
+> **Be detailed in information, not in unnecessary words.**
