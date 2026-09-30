@@ -1,6 +1,6 @@
-**# UNIT–I: INTRODUCTION TO NETWORK**
+# UNIT–I: INTRODUCTION TO NETWORK
 
-**## Data Communication & Networking — Exam Master Notes**
+## Data Communication & Networking — Exam Master Notes
 
 Your syllabus covers **\*\*Introduction to Networks, Network Types, Topologies, Protocol Layering, OSI Model, TCP/IP Protocol Suite, Physical Layer, Performance, Transmission Media, and Switching\*\***. These are also the major sections listed in your university PPT. 
 
@@ -10,7 +10,7 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
 
 ## 📚 Table of Contents
 
-> Click any topic below to jump directly to that section on GitHub.
+> Click any topic to jump directly to that section.
 
 - [UNIT–I: INTRODUCTION TO NETWORK](#uniti-introduction-to-network)
   - [Data Communication & Networking — Exam Master Notes](#data-communication-networking-exam-master-notes)
@@ -19,7 +19,7 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
     - [Standard Examination Definition](#standard-examination-definition)
     - [In Simple Words](#in-simple-words)
 - [1.2 Data Communication](#12-data-communication)
-    - [Standard Examination Definition](#standard-examination-definition)
+    - [Standard Examination Definition](#standard-examination-definition-1)
     - [Basic Communication Model](#basic-communication-model)
     - [Components of Data Communication](#components-of-data-communication)
     - [1. Sender](#1-sender)
@@ -39,12 +39,12 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
   - [C. Full-Duplex](#c-full-duplex)
     - [Comparison](#comparison)
 - [2. COMPUTER NETWORK](#2-computer-network)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-2)
     - [Why Do We Need Computer Networks?](#why-do-we-need-computer-networks)
     - [Simple Example](#simple-example)
 - [3. NETWORK TYPES](#3-network-types)
 - [3.1 LAN — Local Area Network](#31-lan-local-area-network)
-    - [Standard Examination Definition](#standard-examination-definition)
+    - [Standard Examination Definition](#standard-examination-definition-3)
     - [Coverage](#coverage)
     - [Characteristics](#characteristics)
     - [Diagram](#diagram)
@@ -52,54 +52,54 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
     - [Limitations](#limitations)
     - [Example](#example)
 - [3.2 MAN — Metropolitan Area Network](#32-man-metropolitan-area-network)
-    - [Standard Examination Definition](#standard-examination-definition)
-    - [Diagram](#diagram)
-    - [Characteristics](#characteristics)
-    - [Advantages](#advantages)
-    - [Limitations](#limitations)
-    - [Example](#example)
+    - [Standard Examination Definition](#standard-examination-definition-4)
+    - [Diagram](#diagram-1)
+    - [Characteristics](#characteristics-1)
+    - [Advantages](#advantages-1)
+    - [Limitations](#limitations-1)
+    - [Example](#example-1)
 - [3.3 WAN — Wide Area Network](#33-wan-wide-area-network)
-    - [Standard Examination Definition](#standard-examination-definition)
-    - [Diagram](#diagram)
-    - [Characteristics](#characteristics)
-    - [Advantages](#advantages)
-    - [Limitations](#limitations)
-    - [Example](#example)
+    - [Standard Examination Definition](#standard-examination-definition-5)
+    - [Diagram](#diagram-2)
+    - [Characteristics](#characteristics-2)
+    - [Advantages](#advantages-2)
+    - [Limitations](#limitations-2)
+    - [Example](#example-2)
 - [LAN vs MAN vs WAN](#lan-vs-man-vs-wan)
     - [Memory Trick](#memory-trick)
 - [4. NETWORK TOPOLOGIES](#4-network-topologies)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-6)
 - [4.1 Bus Topology](#41-bus-topology)
     - [Definition](#definition)
     - [Working](#working)
-    - [Advantages](#advantages)
+    - [Advantages](#advantages-3)
     - [Disadvantages](#disadvantages)
     - [Exam Keyword](#exam-keyword)
 - [4.2 Star Topology](#42-star-topology)
-    - [Definition](#definition)
-    - [Working](#working)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Definition](#definition-1)
+    - [Working](#working-1)
+    - [Advantages](#advantages-4)
+    - [Disadvantages](#disadvantages-1)
     - [Important](#important)
 - [4.3 Ring Topology](#43-ring-topology)
-    - [Definition](#definition)
-    - [Working](#working)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Definition](#definition-2)
+    - [Working](#working-2)
+    - [Advantages](#advantages-5)
+    - [Disadvantages](#disadvantages-2)
 - [4.4 Mesh Topology](#44-mesh-topology)
-    - [Definition](#definition)
+    - [Definition](#definition-3)
     - [Full Mesh](#full-mesh)
-    - [Diagram](#diagram)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Diagram](#diagram-3)
+    - [Advantages](#advantages-6)
+    - [Disadvantages](#disadvantages-3)
     - [Applications](#applications)
 - [Topology Comparison](#topology-comparison)
 - [5. PROTOCOL LAYERING](#5-protocol-layering)
   - [5.1 Protocol](#51-protocol)
-    - [Standard Examination Definition](#standard-examination-definition)
-    - [Example](#example)
+    - [Standard Examination Definition](#standard-examination-definition-7)
+    - [Example](#example-3)
 - [5.2 What Is Protocol Layering?](#52-what-is-protocol-layering)
-    - [Definition](#definition)
+    - [Definition](#definition-4)
   - [Why Do We Need Layering?](#why-do-we-need-layering)
     - [Layered Approach](#layered-approach)
   - [Advantages of Protocol Layering](#advantages-of-protocol-layering)
@@ -110,7 +110,7 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
     - [5. Standardization](#5-standardization)
     - [6. Interoperability](#6-interoperability)
 - [6. OSI REFERENCE MODEL](#6-osi-reference-model)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-8)
 - [6.1 Seven Layers of OSI](#61-seven-layers-of-osi)
     - [Mnemonic](#mnemonic)
 - [6.2 Layer 7 — Application Layer](#62-layer-7-application-layer)
@@ -121,55 +121,55 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
 - [6.3 Layer 6 — Presentation Layer](#63-layer-6-presentation-layer)
     - [Functions](#functions)
     - [Purpose](#purpose)
-    - [Example](#example)
+    - [Example](#example-4)
 - [6.4 Layer 5 — Session Layer](#64-layer-5-session-layer)
-    - [Functions](#functions)
+    - [Functions](#functions-1)
     - [Example Applications](#example-applications)
 - [6.5 Layer 4 — Transport Layer](#65-layer-4-transport-layer)
-    - [Standard Examination Definition](#standard-examination-definition)
+    - [Standard Examination Definition](#standard-examination-definition-9)
     - [Major Functions](#major-functions)
     - [Protocols](#protocols)
     - [Data Unit](#data-unit)
 - [6.6 Layer 3 — Network Layer](#66-layer-3-network-layer)
-    - [Functions](#functions)
+    - [Functions](#functions-2)
     - [Main Protocol](#main-protocol)
     - [Main Device](#main-device)
-    - [Data Unit](#data-unit)
+    - [Data Unit](#data-unit-1)
     - [Important Exam Point](#important-exam-point)
 - [6.7 Layer 2 — Data Link Layer](#67-layer-2-data-link-layer)
-    - [Functions](#functions)
+    - [Functions](#functions-3)
     - [Devices](#devices)
-    - [Data Unit](#data-unit)
-    - [Important Exam Point](#important-exam-point)
+    - [Data Unit](#data-unit-2)
+    - [Important Exam Point](#important-exam-point-1)
 - [6.8 Layer 1 — Physical Layer](#68-layer-1-physical-layer)
-    - [Functions](#functions)
-    - [Data Unit](#data-unit)
-    - [Devices](#devices)
+    - [Functions](#functions-4)
+    - [Data Unit](#data-unit-3)
+    - [Devices](#devices-1)
 - [OSI Layer Summary](#osi-layer-summary)
 - [6.9 Encapsulation](#69-encapsulation)
     - [At Receiver](#at-receiver)
     - [Memory](#memory)
 - [7. TCP/IP PROTOCOL SUITE](#7-tcpip-protocol-suite)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-10)
 - [7.1 Characteristics of TCP/IP](#71-characteristics-of-tcpip)
 - [7.2 Four Layers of TCP/IP](#72-four-layers-of-tcpip)
 - [7.3 TCP/IP Application Layer](#73-tcpip-application-layer)
-    - [Function](#function)
-    - [Protocols](#protocols)
-    - [Examples](#examples)
+    - [Function](#function-1)
+    - [Protocols](#protocols-1)
+    - [Examples](#examples-1)
 - [7.4 TCP/IP Transport Layer](#74-tcpip-transport-layer)
-    - [Functions](#functions)
+    - [Functions](#functions-5)
     - [Major Protocols](#major-protocols)
 - [7.5 Internet Layer](#75-internet-layer)
     - [Main Function](#main-function)
-    - [Main Protocol](#main-protocol)
+    - [Main Protocol](#main-protocol-1)
     - [Important Correction](#important-correction)
 - [7.6 Network Access Layer](#76-network-access-layer)
 - [OSI vs TCP/IP](#osi-vs-tcpip)
     - [Layer Mapping](#layer-mapping)
     - [Very Important](#very-important)
 - [8. PHYSICAL LAYER](#8-physical-layer)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-11)
 - [8.1 Responsibilities of Physical Layer](#81-responsibilities-of-physical-layer)
     - [1. Bit Transmission](#1-bit-transmission)
     - [2. Physical Media](#2-physical-media)
@@ -191,68 +191,68 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
 - [9. TRANSMISSION MEDIA](#9-transmission-media)
 - [9.1 Guided Media](#91-guided-media)
 - [9.2 Twisted Pair Cable](#92-twisted-pair-cable)
-    - [Definition](#definition)
+    - [Definition](#definition-5)
     - [Types](#types)
-    - [Applications](#applications)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Applications](#applications-1)
+    - [Advantages](#advantages-7)
+    - [Disadvantages](#disadvantages-4)
 - [9.3 Coaxial Cable](#93-coaxial-cable)
     - [Structure](#structure)
-    - [Applications](#applications)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Applications](#applications-2)
+    - [Advantages](#advantages-8)
+    - [Disadvantages](#disadvantages-5)
 - [9.4 Optical Fiber](#94-optical-fiber)
-    - [Definition](#definition)
+    - [Definition](#definition-6)
     - [Basic Structure](#basic-structure)
-    - [Working](#working)
-    - [Types](#types)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Working](#working-3)
+    - [Types](#types-1)
+    - [Advantages](#advantages-9)
+    - [Disadvantages](#disadvantages-6)
 - [Guided Media Comparison](#guided-media-comparison)
 - [10. UNGUIDED / WIRELESS MEDIA](#10-unguided-wireless-media)
 - [10.1 Radio Waves](#101-radio-waves)
-    - [Characteristics](#characteristics)
-    - [Applications](#applications)
-    - [Advantages](#advantages)
+    - [Characteristics](#characteristics-3)
+    - [Applications](#applications-3)
+    - [Advantages](#advantages-10)
     - [Limitation](#limitation)
 - [10.2 Infrared](#102-infrared)
-    - [Characteristics](#characteristics)
-    - [Applications](#applications)
+    - [Characteristics](#characteristics-4)
+    - [Applications](#applications-4)
     - [Advantage](#advantage)
-    - [Limitation](#limitation)
+    - [Limitation](#limitation-1)
 - [10.3 Satellite Communication](#103-satellite-communication)
-    - [Definition](#definition)
+    - [Definition](#definition-7)
     - [Basic Diagram](#basic-diagram)
-    - [Applications](#applications)
-    - [Advantages](#advantages)
-    - [Limitations](#limitations)
+    - [Applications](#applications-5)
+    - [Advantages](#advantages-11)
+    - [Limitations](#limitations-3)
 - [11. SWITCHING](#11-switching)
-  - [Standard Examination Definition](#standard-examination-definition)
+  - [Standard Examination Definition](#standard-examination-definition-12)
     - [Main Types](#main-types)
 - [11.1 Circuit Switching](#111-circuit-switching)
-    - [Definition](#definition)
+    - [Definition](#definition-8)
     - [Three Phases](#three-phases)
-    - [Working](#working)
+    - [Working](#working-4)
     - [Step 1 — Connection Establishment](#step-1-connection-establishment)
     - [Step 2 — Data Transfer](#step-2-data-transfer)
     - [Step 3 — Connection Termination](#step-3-connection-termination)
-    - [Example](#example)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Example](#example-5)
+    - [Advantages](#advantages-12)
+    - [Disadvantages](#disadvantages-7)
 - [11.2 Packet Switching](#112-packet-switching)
-    - [Definition](#definition)
-    - [Diagram](#diagram)
-    - [Working](#working)
-    - [Example](#example)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
+    - [Definition](#definition-9)
+    - [Diagram](#diagram-4)
+    - [Working](#working-5)
+    - [Example](#example-6)
+    - [Advantages](#advantages-13)
+    - [Disadvantages](#disadvantages-8)
 - [11.3 Message Switching](#113-message-switching)
-    - [Definition](#definition)
-    - [Diagram](#diagram)
-    - [Working](#working)
-    - [Advantages](#advantages)
-    - [Disadvantages](#disadvantages)
-    - [Example](#example)
+    - [Definition](#definition-10)
+    - [Diagram](#diagram-5)
+    - [Working](#working-6)
+    - [Advantages](#advantages-14)
+    - [Disadvantages](#disadvantages-9)
+    - [Example](#example-7)
 - [Circuit vs Packet vs Message Switching](#circuit-vs-packet-vs-message-switching)
 - [⭐ MOST IMPORTANT EXAM COMPARISONS](#most-important-exam-comparisons)
   - [Hub vs Switch vs Router](#hub-vs-switch-vs-router)
@@ -284,7 +284,7 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
     - [OSI Mnemonic](#osi-mnemonic)
     - [TCP/IP](#tcpip)
     - [Data Units](#data-units)
-    - [Devices](#devices)
+    - [Devices](#devices-2)
     - [Physical Media](#physical-media)
     - [Switching](#switching)
     - [Performance](#performance)
@@ -300,15 +300,15 @@ I’ve structured these as **\*\*exam-writing notes\*\***, not as a PPT summary:
     - [Highest-priority topics for tomorrow](#highest-priority-topics-for-tomorrow)
 
 ---
-**# 1. INTRODUCTION TO COMPUTER NETWORKS**
+# 1. INTRODUCTION TO COMPUTER NETWORKS
 
-**## 1.1 Data**
+## 1.1 Data
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 **\*\*Data\*\*** is a collection of raw facts, symbols, numbers, text, images, audio, or video that can be processed or communicated between systems.
 
-**### In Simple Words**
+### In Simple Words
 
 Data is simply the **\*\*information that needs to be communicated\*\***.
 
@@ -330,13 +330,13 @@ Your PPT defines data as a collection of raw facts, symbols, numbers, text, imag
 
 **---**
 
-**# 1.2 Data Communication**
+# 1.2 Data Communication
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 **\*\*Data communication\*\*** is the process of exchanging data between two or more devices through a transmission medium using a defined set of communication rules called protocols.
 
-**### Basic Communication Model**
+### Basic Communication Model
 
 \`\`\`text
 
@@ -354,7 +354,7 @@ Your PPT defines data as a collection of raw facts, symbols, numbers, text, imag
 
 \`\`\`
 
-**### Components of Data Communication**
+### Components of Data Communication
 
 Your PPT identifies the following components:
 
@@ -372,19 +372,19 @@ Your PPT identifies the following components:
 
 
 
-**### 1. Sender**
+### 1. Sender
 
 The device that generates and sends the data.
 
 **\*\*Example:\*\*** Your laptop sending an email.
 
-**### 2. Receiver**
+### 2. Receiver
 
 The device that receives the transmitted data.
 
 **\*\*Example:\*\*** The recipient's smartphone.
 
-**### 3. Message**
+### 3. Message
 
 The actual information being transmitted.
 
@@ -400,7 +400,7 @@ Examples:
 
 \* File
 
-**### 4. Transmission Medium**
+### 4. Transmission Medium
 
 The physical or wireless path through which data travels.
 
@@ -414,7 +414,7 @@ Examples:
 
 \* Mobile network
 
-**### 5. Protocol**
+### 5. Protocol
 
 A set of rules that controls communication between devices.
 
@@ -430,25 +430,25 @@ Examples:
 
 **---**
 
-**# 1.3 Characteristics of Effective Data Communication**
+# 1.3 Characteristics of Effective Data Communication
 
 A good communication system should provide:
 
-**### 1. Delivery**
+### 1. Delivery
 
 Data must reach the **\*\*correct destination\*\***.
 
-**### 2. Accuracy**
+### 2. Accuracy
 
 Data should arrive **\*\*without errors or corruption\*\***.
 
-**### 3. Timeliness**
+### 3. Timeliness
 
 Data must arrive **\*\*within an acceptable time\*\***.
 
 This is particularly important for real-time applications such as voice and video.
 
-**### 4. Low Jitter**
+### 4. Low Jitter
 
 **\*\*Jitter\*\*** is the variation in delay between successive packets.
 
@@ -478,7 +478,7 @@ Large jitter can cause problems in:
 
 These four characteristics are explicitly given in the PPT on **\*\*Page 6\*\***. 
 
-**### Exam Memory Trick**
+### Exam Memory Trick
 
 **\*\*D-A-T-J\*\***
 
@@ -492,11 +492,11 @@ These four characteristics are explicitly given in the PPT on **\*\*Page 6\*\***
 
 **---**
 
-**# 1.4 Data Flow**
+# 1.4 Data Flow
 
 Data can flow between devices in three ways.
 
-**## A. Simplex**
+## A. Simplex
 
 Communication occurs in **\*\*only one direction\*\***.
 
@@ -518,7 +518,7 @@ The receiver cannot send data back through the same communication arrangement.
 
 **---**
 
-**## B. Half-Duplex**
+## B. Half-Duplex
 
 Communication can occur in **\*\*both directions, but not simultaneously\*\***.
 
@@ -540,7 +540,7 @@ One person speaks while the other listens.
 
 **---**
 
-**## C. Full-Duplex**
+## C. Full-Duplex
 
 Communication occurs in **\*\*both directions simultaneously\*\***.
 
@@ -558,7 +558,7 @@ Example:
 
 \* Video call
 
-**### Comparison**
+### Comparison
 
 \| Feature                    | Simplex      | Half-Duplex   | Full-Duplex |
 
@@ -576,15 +576,15 @@ The PPT illustrates all three modes on **\*\*Page 8\*\***.
 
 **---**
 
-**# 2. COMPUTER NETWORK**
+# 2. COMPUTER NETWORK
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 A **\*\*computer network\*\*** is a collection of interconnected computers and other devices that communicate with one another and share data, resources, and services through communication links and protocols.
 
 The PPT defines a computer network as interconnected computers/devices that communicate and share resources. It lists files, printers, Internet, storage, and applications as examples of shared resources. **\*\*Page 9\*\***.
 
-**### Why Do We Need Computer Networks?**
+### Why Do We Need Computer Networks?
 
 Networks allow:
 
@@ -604,7 +604,7 @@ Networks allow:
 
 \* **\*\*Centralized services\*\***
 
-**### Simple Example**
+### Simple Example
 
 In a college:
 
@@ -634,7 +634,7 @@ All computers can potentially share:
 
 **---**
 
-**# 3. NETWORK TYPES**
+# 3. NETWORK TYPES
 
 Networks can be classified according to their **\*\*geographical coverage\*\***.
 
@@ -650,13 +650,13 @@ This classification is given on **\*\*Page 23\*\***.
 
 **---**
 
-**# 3.1 LAN — Local Area Network**
+# 3.1 LAN — Local Area Network
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects devices within a relatively small geographical area such as a room, office, building, laboratory, or campus.
 
-**### Coverage**
+### Coverage
 
 \* Room
 
@@ -666,7 +666,7 @@ A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects 
 
 \* Building
 
-**### Characteristics**
+### Characteristics
 
 \* Small geographical area
 
@@ -680,7 +680,7 @@ A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects 
 
 \* High reliability
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -698,7 +698,7 @@ A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects 
 
 \`\`\`
 
-**### Advantages**
+### Advantages
 
 \* Fast communication
 
@@ -710,7 +710,7 @@ A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects 
 
 \* High data-transfer rate
 
-**### Limitations**
+### Limitations
 
 \* Limited geographical coverage
 
@@ -718,19 +718,19 @@ A **\*\*Local Area Network (LAN)\*\*** is a computer network that interconnects 
 
 \* Expansion over large geographical areas becomes expensive/complex
 
-**### Example**
+### Example
 
 A college computer laboratory connected using Ethernet.
 
 **---**
 
-**# 3.2 MAN — Metropolitan Area Network**
+# 3.2 MAN — Metropolitan Area Network
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 A **\*\*Metropolitan Area Network (MAN)\*\*** is a network that interconnects multiple LANs within a city or metropolitan geographical area.
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -750,7 +750,7 @@ LAN ---- MAN ---- LAN
 
 \`\`\`
 
-**### Characteristics**
+### Characteristics
 
 \* Covers a city/metropolitan area
 
@@ -764,7 +764,7 @@ LAN ---- MAN ---- LAN
 
 \* Often managed by telecom operators or large organizations
 
-**### Advantages**
+### Advantages
 
 \* Covers a larger geographical area
 
@@ -772,7 +772,7 @@ LAN ---- MAN ---- LAN
 
 \* High-speed communication
 
-**### Limitations**
+### Limitations
 
 \* Expensive installation
 
@@ -780,19 +780,19 @@ LAN ---- MAN ---- LAN
 
 \* Requires dedicated infrastructure
 
-**### Example**
+### Example
 
 A network connecting branches of an organization across a city.
 
 **---**
 
-**# 3.3 WAN — Wide Area Network**
+# 3.3 WAN — Wide Area Network
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 A **\*\*Wide Area Network (WAN)\*\*** is a computer network that connects geographically separated networks across large areas such as countries or continents.
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -824,7 +824,7 @@ A **\*\*Wide Area Network (WAN)\*\*** is a computer network that connects geogra
 
 \`\`\`
 
-**### Characteristics**
+### Characteristics
 
 \* Largest geographical coverage
 
@@ -836,7 +836,7 @@ A **\*\*Wide Area Network (WAN)\*\*** is a computer network that connects geogra
 
 \* Often involves telecommunications providers/ISPs
 
-**### Advantages**
+### Advantages
 
 \* Global communication
 
@@ -848,7 +848,7 @@ A **\*\*Wide Area Network (WAN)\*\*** is a computer network that connects geogra
 
 \* Connects geographically distributed organizations
 
-**### Limitations**
+### Limitations
 
 \* Higher cost
 
@@ -858,13 +858,13 @@ A **\*\*Wide Area Network (WAN)\*\*** is a computer network that connects geogra
 
 \* Generally lower performance than a local network for the same technology
 
-**### Example**
+### Example
 
 The **\*\*Internet\*\*** is the most prominent example of a global WAN.
 
 **---**
 
-**# LAN vs MAN vs WAN**
+# LAN vs MAN vs WAN
 
 \| Parameter | LAN                   | MAN                       | WAN                      |
 
@@ -886,7 +886,7 @@ The **\*\*Internet\*\*** is the most prominent example of a global WAN.
 
 \| Example   | College lab           | City-wide network         | Internet                 |
 
-**### Memory Trick**
+### Memory Trick
 
 \> **\*\*LAN → Local\*\***
 
@@ -896,9 +896,9 @@ The **\*\*Internet\*\*** is the most prominent example of a global WAN.
 
 **---**
 
-**# 4. NETWORK TOPOLOGIES**
+# 4. NETWORK TOPOLOGIES
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 **\*\*Network topology\*\*** refers to the physical or logical arrangement of nodes, communication links, and networking devices within a computer network.
 
@@ -918,9 +918,9 @@ These points are explicitly included in the PPT on **\*\*Page 31\*\***.
 
 **---**
 
-**# 4.1 Bus Topology**
+# 4.1 Bus Topology
 
-**### Definition**
+### Definition
 
 In **\*\*Bus topology\*\***, all devices are connected to a single shared communication cable called the **\*\*backbone\*\***.
 
@@ -938,7 +938,7 @@ PC1       PC2       PC3
 
 \`\`\`
 
-**### Working**
+### Working
 
 1\. Sender places data on the common backbone.
 
@@ -950,7 +950,7 @@ PC1       PC2       PC3
 
 5\. Proper termination is required at the ends of the physical bus.
 
-**### Advantages**
+### Advantages
 
 \* Simple installation
 
@@ -960,7 +960,7 @@ PC1       PC2       PC3
 
 \* Suitable for small networks
 
-**### Disadvantages**
+### Disadvantages
 
 \* Backbone failure can affect the entire network
 
@@ -970,15 +970,15 @@ PC1       PC2       PC3
 
 \* Collisions can occur
 
-**### Exam Keyword**
+### Exam Keyword
 
 **\*\*Single backbone cable\*\***
 
 **---**
 
-**# 4.2 Star Topology**
+# 4.2 Star Topology
 
-**### Definition**
+### Definition
 
 In **\*\*Star topology\*\***, each network device has a separate connection to a **\*\*central networking device\*\***, usually a switch.
 
@@ -1000,7 +1000,7 @@ PC2 -------- SWITCH -------- PC3
 
 \`\`\`
 
-**### Working**
+### Working
 
 1\. Sender sends data to the central switch/hub.
 
@@ -1010,7 +1010,7 @@ PC2 -------- SWITCH -------- PC3
 
 4\. Data is forwarded toward the destination.
 
-**### Advantages**
+### Advantages
 
 \* Easy installation
 
@@ -1022,7 +1022,7 @@ PC2 -------- SWITCH -------- PC3
 
 \* Good performance with switches
 
-**### Disadvantages**
+### Disadvantages
 
 \* Requires more cable
 
@@ -1030,15 +1030,15 @@ PC2 -------- SWITCH -------- PC3
 
 \* Failure of central device can disrupt the network
 
-**### Important**
+### Important
 
 Modern Ethernet LANs commonly use **\*\*star or extended-star physical arrangements\*\***.
 
 **---**
 
-**# 4.3 Ring Topology**
+# 4.3 Ring Topology
 
-**### Definition**
+### Definition
 
 In **\*\*Ring topology\*\***, each device is connected to two neighboring devices, forming a closed loop.
 
@@ -1054,11 +1054,11 @@ In **\*\*Ring topology\*\***, each device is connected to two neighboring device
 
 \`\`\`
 
-**### Working**
+### Working
 
 Data travels around the ring according to the network's access mechanism.
 
-**### Advantages**
+### Advantages
 
 \* Predictable performance
 
@@ -1066,7 +1066,7 @@ Data travels around the ring according to the network's access mechanism.
 
 \* Traditional token-based implementations can avoid collisions
 
-**### Disadvantages**
+### Disadvantages
 
 \* A link/node failure can disrupt communication in a basic ring
 
@@ -1076,13 +1076,13 @@ Data travels around the ring according to the network's access mechanism.
 
 **---**
 
-**# 4.4 Mesh Topology**
+# 4.4 Mesh Topology
 
-**### Definition**
+### Definition
 
 In **\*\*mesh topology\*\***, devices are interconnected through multiple communication links, providing multiple possible paths between nodes.
 
-**### Full Mesh**
+### Full Mesh
 
 Every node has a direct link to every other node.
 
@@ -1094,7 +1094,7 @@ $$
 
 $$
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -1122,7 +1122,7 @@ $$
 
 \`\`\`
 
-**### Advantages**
+### Advantages
 
 \* High reliability
 
@@ -1132,7 +1132,7 @@ $$
 
 \* No single link necessarily becomes the only path
 
-**### Disadvantages**
+### Disadvantages
 
 \* Very expensive
 
@@ -1142,13 +1142,13 @@ $$
 
 \* Difficult maintenance
 
-**### Applications**
+### Applications
 
 Useful where **\*\*redundancy and reliability\*\*** are extremely important.
 
 **---**
 
-**# Topology Comparison**
+# Topology Comparison
 
 \| Feature           | Bus              | Star                   | Ring               | Mesh            |
 
@@ -1170,17 +1170,17 @@ Useful where **\*\*redundancy and reliability\*\*** are extremely important.
 
 **---**
 
-**# 5. PROTOCOL LAYERING**
+# 5. PROTOCOL LAYERING
 
-**## 5.1 Protocol**
+## 5.1 Protocol
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 A **\*\*protocol\*\*** is a formally defined set of rules and conventions that governs communication between network entities, including data format, transmission procedures, timing, addressing, error handling, and delivery.
 
 The PPT specifically states that protocols define **\*\*data transmission, data format, timing, error handling, and data delivery\*\***. **\*\*Page 40\*\***.
 
-**### Example**
+### Example
 
 When a browser communicates with a web server, several protocols can participate:
 
@@ -1204,9 +1204,9 @@ Ethernet/Wi-Fi
 
 **---**
 
-**# 5.2 What Is Protocol Layering?**
+# 5.2 What Is Protocol Layering?
 
-**### Definition**
+### Definition
 
 **\*\*Protocol layering\*\*** is the organization of network communication into multiple hierarchical layers, where each layer performs a specific set of functions, uses services from the layer below, and provides services to the layer above.
 
@@ -1214,7 +1214,7 @@ The PPT introduces layering on **\*\*Pages 41–43\*\***.
 
 **---**
 
-**## Why Do We Need Layering?**
+## Why Do We Need Layering?
 
 Without layering, a single networking program would have to handle:
 
@@ -1240,7 +1240,7 @@ This would make the system:
 
 \* Difficult to troubleshoot
 
-**### Layered Approach**
+### Layered Approach
 
 \`\`\`text
 
@@ -1272,37 +1272,37 @@ Each layer has a **\*\*specific responsibility\*\***.
 
 **---**
 
-**## Advantages of Protocol Layering**
+## Advantages of Protocol Layering
 
-**### 1. Simplicity**
+### 1. Simplicity
 
 Each layer handles a limited task.
 
-**### 2. Modularity**
+### 2. Modularity
 
 A layer can be modified without redesigning the complete network architecture.
 
-**### 3. Troubleshooting**
+### 3. Troubleshooting
 
 Problems can be isolated to a particular layer.
 
-**### 4. Easy Upgrades**
+### 4. Easy Upgrades
 
 Technology at one layer can evolve independently.
 
-**### 5. Standardization**
+### 5. Standardization
 
 Different manufacturers can implement compatible networking systems.
 
-**### 6. Interoperability**
+### 6. Interoperability
 
 Systems from different vendors can communicate using common protocols.
 
 **---**
 
-**# 6. OSI REFERENCE MODEL**
+# 6. OSI REFERENCE MODEL
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 The **\*\*Open Systems Interconnection (OSI) reference model\*\*** is a seven-layer conceptual framework developed by ISO to standardize and describe the functions involved in network communication.
 
@@ -1316,7 +1316,7 @@ The PPT makes this distinction on **\*\*Page 44\*\***.
 
 **---**
 
-**# 6.1 Seven Layers of OSI**
+# 6.1 Seven Layers of OSI
 
 \`\`\`text
 
@@ -1352,7 +1352,7 @@ The PPT makes this distinction on **\*\*Page 44\*\***.
 
 \`\`\`
 
-**### Mnemonic**
+### Mnemonic
 
 From **\*\*Layer 7 → Layer 1\*\***:
 
@@ -1374,13 +1374,13 @@ From **\*\*Layer 7 → Layer 1\*\***:
 
 **---**
 
-**# 6.2 Layer 7 — Application Layer**
+# 6.2 Layer 7 — Application Layer
 
-**### Function**
+### Function
 
 Provides network services directly to applications/users.
 
-**### Examples**
+### Examples
 
 \* Web browsing
 
@@ -1390,7 +1390,7 @@ Provides network services directly to applications/users.
 
 \* Remote login
 
-**### Common Protocols**
+### Common Protocols
 
 \* HTTP
 
@@ -1402,15 +1402,15 @@ Provides network services directly to applications/users.
 
 \* DNS
 
-**### Key Point**
+### Key Point
 
 The Application layer is **\*\*not simply the application itself\*\***; it provides network-oriented services used by applications.
 
 **---**
 
-**# 6.3 Layer 6 — Presentation Layer**
+# 6.3 Layer 6 — Presentation Layer
 
-**### Functions**
+### Functions
 
 \* Data formatting
 
@@ -1422,11 +1422,11 @@ The Application layer is **\*\*not simply the application itself\*\***; it provi
 
 \* Compression
 
-**### Purpose**
+### Purpose
 
 Ensures that data is represented in a form that the receiving system can interpret.
 
-**### Example**
+### Example
 
 \`\`\`text
 
@@ -1448,9 +1448,9 @@ Transmission
 
 **---**
 
-**# 6.4 Layer 5 — Session Layer**
+# 6.4 Layer 5 — Session Layer
 
-**### Functions**
+### Functions
 
 \* Establishes sessions
 
@@ -1460,7 +1460,7 @@ Transmission
 
 \* Terminates sessions
 
-**### Example Applications**
+### Example Applications
 
 \* Video conferencing
 
@@ -1470,13 +1470,13 @@ Transmission
 
 **---**
 
-**# 6.5 Layer 4 — Transport Layer**
+# 6.5 Layer 4 — Transport Layer
 
-**### Standard Examination Definition**
+### Standard Examination Definition
 
 The **\*\*Transport Layer\*\*** provides end-to-end communication between processes running on different hosts and is responsible for functions such as segmentation, reliability, flow control, and multiplexing using port numbers.
 
-**### Major Functions**
+### Major Functions
 
 \* Segmentation
 
@@ -1492,7 +1492,7 @@ The **\*\*Transport Layer\*\*** provides end-to-end communication between proces
 
 \* Port addressing
 
-**### Protocols**
+### Protocols
 
 **\*\*TCP\*\***
 
@@ -1510,7 +1510,7 @@ The **\*\*Transport Layer\*\*** provides end-to-end communication between proces
 
 \* Does not provide TCP-style reliability
 
-**### Data Unit**
+### Data Unit
 
 Usually:
 
@@ -1520,9 +1520,9 @@ Usually:
 
 **---**
 
-**# 6.6 Layer 3 — Network Layer**
+# 6.6 Layer 3 — Network Layer
 
-**### Functions**
+### Functions
 
 \* Logical addressing
 
@@ -1532,11 +1532,11 @@ Usually:
 
 \* Packet forwarding
 
-**### Main Protocol**
+### Main Protocol
 
 **\*\*IP — Internet Protocol\*\***
 
-**### Main Device**
+### Main Device
 
 **\*\*Router\*\***
 
@@ -1552,19 +1552,19 @@ PC ---- Switch ---- Router ---- Switch ---- PC
 
 \`\`\`
 
-**### Data Unit**
+### Data Unit
 
 **\*\*Packet\*\***
 
-**### Important Exam Point**
+### Important Exam Point
 
 \> **\*\*Router → Network Layer → IP address → Packet\*\***
 
 **---**
 
-**# 6.7 Layer 2 — Data Link Layer**
+# 6.7 Layer 2 — Data Link Layer
 
-**### Functions**
+### Functions
 
 \* Framing
 
@@ -1576,7 +1576,7 @@ PC ---- Switch ---- Router ---- Switch ---- PC
 
 \* Local/link-level delivery
 
-**### Devices**
+### Devices
 
 \* Switch
 
@@ -1584,19 +1584,19 @@ PC ---- Switch ---- Router ---- Switch ---- PC
 
 \* NIC
 
-**### Data Unit**
+### Data Unit
 
 **\*\*Frame\*\***
 
-**### Important Exam Point**
+### Important Exam Point
 
 \> **\*\*Switch → Data Link Layer → MAC address → Frame\*\***
 
 **---**
 
-**# 6.8 Layer 1 — Physical Layer**
+# 6.8 Layer 1 — Physical Layer
 
-**### Functions**
+### Functions
 
 \* Transmits raw bits
 
@@ -1618,11 +1618,11 @@ Examples include:
 
 \* Bit transmission
 
-**### Data Unit**
+### Data Unit
 
 **\*\*Bits\*\***
 
-**### Devices**
+### Devices
 
 \* Repeater
 
@@ -1632,7 +1632,7 @@ Examples include:
 
 **---**
 
-**# OSI Layer Summary**
+# OSI Layer Summary
 
 \| Layer | Name         | Major Function                    | Data Unit        |
 
@@ -1656,7 +1656,7 @@ The PPT gives essentially this layer-function mapping on **\*\*Pages 46–53\*\*
 
 **---**
 
-**# 6.9 Encapsulation**
+# 6.9 Encapsulation
 
 This is **\*\*very important for theory exams\*\***.
 
@@ -1704,7 +1704,7 @@ Physical
 
 \`\`\`
 
-**### At Receiver**
+### At Receiver
 
 The reverse process occurs:
 
@@ -1712,7 +1712,7 @@ The reverse process occurs:
 
 Each layer removes/interprets information intended for it.
 
-**### Memory**
+### Memory
 
 **\*\*Sender = Encapsulation\*\***
 
@@ -1720,9 +1720,9 @@ Each layer removes/interprets information intended for it.
 
 **---**
 
-**# 7. TCP/IP PROTOCOL SUITE**
+# 7. TCP/IP PROTOCOL SUITE
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 The **\*\*TCP/IP protocol suite\*\*** is a collection of standardized communication protocols used to enable communication between interconnected computer systems, forming the fundamental protocol architecture of the Internet.
 
@@ -1734,7 +1734,7 @@ The PPT identifies TCP/IP as a communication protocol suite and associates its d
 
 **---**
 
-**# 7.1 Characteristics of TCP/IP**
+# 7.1 Characteristics of TCP/IP
 
 \* Open standard
 
@@ -1748,7 +1748,7 @@ The PPT identifies TCP/IP as a communication protocol suite and associates its d
 
 **---**
 
-**# 7.2 Four Layers of TCP/IP**
+# 7.2 Four Layers of TCP/IP
 
 \`\`\`text
 
@@ -1776,13 +1776,13 @@ The PPT explicitly uses this **\*\*four-layer architecture\*\*** on Page 56.
 
 **---**
 
-**# 7.3 TCP/IP Application Layer**
+# 7.3 TCP/IP Application Layer
 
-**### Function**
+### Function
 
 Provides network services to user applications.
 
-**### Protocols**
+### Protocols
 
 \* HTTP
 
@@ -1800,7 +1800,7 @@ Provides network services to user applications.
 
 \* DHCP
 
-**### Examples**
+### Examples
 
 Web browsing:
 
@@ -1820,9 +1820,9 @@ Mail Client → SMTP/IMAP/POP3 → Mail Server
 
 **---**
 
-**# 7.4 TCP/IP Transport Layer**
+# 7.4 TCP/IP Transport Layer
 
-**### Functions**
+### Functions
 
 \* End-to-end communication
 
@@ -1836,9 +1836,9 @@ Mail Client → SMTP/IMAP/POP3 → Mail Server
 
 \* Port addressing
 
-**### Major Protocols**
+### Major Protocols
 
-**#### TCP**
+#### TCP
 
 \* Connection-oriented
 
@@ -1848,7 +1848,7 @@ Mail Client → SMTP/IMAP/POP3 → Mail Server
 
 \* Uses acknowledgements and retransmission
 
-**#### UDP**
+#### UDP
 
 \* Connectionless
 
@@ -1860,9 +1860,9 @@ Mail Client → SMTP/IMAP/POP3 → Mail Server
 
 **---**
 
-**# 7.5 Internet Layer**
+# 7.5 Internet Layer
 
-**### Main Function**
+### Main Function
 
 Provides:
 
@@ -1872,7 +1872,7 @@ Provides:
 
 \* Packet forwarding
 
-**### Main Protocol**
+### Main Protocol
 
 **\*\*IP\*\***
 
@@ -1882,13 +1882,13 @@ Other protocols associated with this part of the TCP/IP architecture include:
 
 \* IGMP
 
-**### Important Correction**
+### Important Correction
 
 Your PPT places **\*\*ARP\*\*** under the Internet layer. In many standard textbook mappings, ARP is treated as a protocol operating at the boundary between the **\*\*Internet/network layer and link/network-access layer\*\***, because it resolves an IP address to a link-layer address. So for an exam, follow your professor's diagram if specifically taught, but understand this distinction.
 
 **---**
 
-**# 7.6 Network Access Layer**
+# 7.6 Network Access Layer
 
 Responsible for communication over the local physical network.
 
@@ -1912,7 +1912,7 @@ Functions include:
 
 **---**
 
-**# OSI vs TCP/IP**
+# OSI vs TCP/IP
 
 \| Parameter            | OSI                          | TCP/IP                                          |
 
@@ -1938,7 +1938,7 @@ Functions include:
 
 \| Usage                | Reference/conceptual model   | Practical Internet protocol suite               |
 
-**### Layer Mapping**
+### Layer Mapping
 
 \`\`\`text
 
@@ -1966,15 +1966,15 @@ Physical ───────────┴──→ Network Access
 
 \`\`\`
 
-**### Very Important**
+### Very Important
 
 Do **\*\*not\*\*** memorize TCP/IP as simply "OSI with fewer layers." Their purposes and historical development are different; the mapping is mainly useful for understanding corresponding functions.
 
 **---**
 
-**# 8. PHYSICAL LAYER**
+# 8. PHYSICAL LAYER
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 The **\*\*Physical Layer\*\*** is the lowest layer of the OSI model responsible for transmitting raw bits over a physical communication medium by defining the electrical, optical, radio, mechanical, and interface characteristics required for communication.
 
@@ -1982,9 +1982,9 @@ The PPT lists physical transmission and the definition of cables, connectors, vo
 
 **---**
 
-**# 8.1 Responsibilities of Physical Layer**
+# 8.1 Responsibilities of Physical Layer
 
-**### 1. Bit Transmission**
+### 1. Bit Transmission
 
 Converts bits into appropriate signals and transmits them.
 
@@ -2006,7 +2006,7 @@ Medium
 
 \`\`\`
 
-**### 2. Physical Media**
+### 2. Physical Media
 
 Defines characteristics of:
 
@@ -2016,43 +2016,43 @@ Defines characteristics of:
 
 \* Wireless transmission
 
-**### 3. Connectors and Interfaces**
+### 3. Connectors and Interfaces
 
 Defines physical connection characteristics.
 
-**### 4. Signal Representation**
+### 4. Signal Representation
 
 Specifies how binary information is represented through physical signals.
 
-**### 5. Transmission Rate**
+### 5. Transmission Rate
 
 Defines characteristics related to the transmission of bits.
 
 **---**
 
-**# 8.2 Physical Layer Performance**
+# 8.2 Physical Layer Performance
 
 Important performance concepts include:
 
-**### Bandwidth**
+### Bandwidth
 
 The capacity/frequency range of a communication channel.
 
 For digital networking, greater available bandwidth can support a higher data rate, although actual throughput also depends on other factors.
 
-**### Throughput**
+### Throughput
 
 The **\*\*actual rate at which useful data is successfully delivered\*\***.
 
-**### Latency / Delay**
+### Latency / Delay
 
 The time required for data to travel from source to destination.
 
-**### Jitter**
+### Jitter
 
 Variation in packet delay.
 
-**### Bit Rate**
+### Bit Rate
 
 Number of bits transmitted per second.
 
@@ -2068,19 +2068,19 @@ Unit:
 
 **---**
 
-**# 8.3 Important Types of Delay**
+# 8.3 Important Types of Delay
 
 For a packet traveling through a network, total delay can involve:
 
-**### 1. Processing Delay**
+### 1. Processing Delay
 
 Time required by a device to examine/process the packet.
 
-**### 2. Queuing Delay**
+### 2. Queuing Delay
 
 Time spent waiting in a queue before transmission.
 
-**### 3. Transmission Delay**
+### 3. Transmission Delay
 
 Time required to push all packet bits onto the link.
 
@@ -2096,7 +2096,7 @@ Where:
 
 \* \\(R\\) = transmission rate in bits/second
 
-**### 4. Propagation Delay**
+### 4. Propagation Delay
 
 Time required for the signal to travel through the physical medium.
 
@@ -2112,7 +2112,7 @@ Where:
 
 \* \\(v\\) = propagation speed
 
-**### Important Difference**
+### Important Difference
 
 \> **\*\*Transmission delay = putting the bits onto the link.\*\***
 
@@ -2122,7 +2122,7 @@ This is a very common exam question.
 
 **---**
 
-**# 9. TRANSMISSION MEDIA**
+# 9. TRANSMISSION MEDIA
 
 Transmission media are broadly classified as:
 
@@ -2158,7 +2158,7 @@ Your PPT gives this classification on **\*\*Page 62\*\***.
 
 **---**
 
-**# 9.1 Guided Media**
+# 9.1 Guided Media
 
 In **\*\*guided transmission\*\***, signals travel through a physical path.
 
@@ -2172,15 +2172,15 @@ Main types:
 
 **---**
 
-**# 9.2 Twisted Pair Cable**
+# 9.2 Twisted Pair Cable
 
-**### Definition**
+### Definition
 
 A **\*\*twisted-pair cable\*\*** consists of two insulated copper conductors twisted around each other to reduce electromagnetic interference and crosstalk.
 
-**### Types**
+### Types
 
-**#### UTP — Unshielded Twisted Pair**
+#### UTP — Unshielded Twisted Pair
 
 No additional metallic shielding around the pairs.
 
@@ -2192,11 +2192,11 @@ Advantages:
 
 \* Easy installation
 
-**#### STP — Shielded Twisted Pair**
+#### STP — Shielded Twisted Pair
 
 Contains additional shielding to reduce electromagnetic interference.
 
-**### Applications**
+### Applications
 
 \* Telephone systems
 
@@ -2204,7 +2204,7 @@ Contains additional shielding to reduce electromagnetic interference.
 
 \* Structured cabling
 
-**### Advantages**
+### Advantages
 
 \* Low cost
 
@@ -2214,7 +2214,7 @@ Contains additional shielding to reduce electromagnetic interference.
 
 \* Easy to terminate
 
-**### Disadvantages**
+### Disadvantages
 
 \* More susceptible to interference than fiber
 
@@ -2224,9 +2224,9 @@ Contains additional shielding to reduce electromagnetic interference.
 
 **---**
 
-**# 9.3 Coaxial Cable**
+# 9.3 Coaxial Cable
 
-**### Structure**
+### Structure
 
 \`\`\`text
 
@@ -2266,7 +2266,7 @@ Main components:
 
 4\. Outer protective cover
 
-**### Applications**
+### Applications
 
 \* Cable TV
 
@@ -2274,7 +2274,7 @@ Main components:
 
 \* Broadband systems
 
-**### Advantages**
+### Advantages
 
 \* Better shielding than ordinary twisted pair
 
@@ -2282,7 +2282,7 @@ Main components:
 
 \* Can support longer distances than many basic copper-pair installations
 
-**### Disadvantages**
+### Disadvantages
 
 \* Bulkier
 
@@ -2292,13 +2292,13 @@ Main components:
 
 **---**
 
-**# 9.4 Optical Fiber**
+# 9.4 Optical Fiber
 
-**### Definition**
+### Definition
 
 **\*\*Optical fiber\*\*** is a transmission medium that carries information as pulses of light through a thin optical fiber.
 
-**### Basic Structure**
+### Basic Structure
 
 \`\`\`text
 
@@ -2322,7 +2322,7 @@ Main components:
 
 \`\`\`
 
-**### Working**
+### Working
 
 1\. Electrical data is converted into optical signals.
 
@@ -2332,9 +2332,9 @@ Main components:
 
 4\. Optical signals are converted back into electrical/data signals.
 
-**### Types**
+### Types
 
-**#### Single-Mode Fiber (SMF)**
+#### Single-Mode Fiber (SMF)
 
 \* Small core
 
@@ -2342,7 +2342,7 @@ Main components:
 
 \* Suitable for long-distance/high-capacity communication
 
-**#### Multi-Mode Fiber (MMF)**
+#### Multi-Mode Fiber (MMF)
 
 \* Larger core
 
@@ -2350,7 +2350,7 @@ Main components:
 
 \* Common for shorter-distance applications
 
-**### Advantages**
+### Advantages
 
 \* Very high bandwidth
 
@@ -2362,7 +2362,7 @@ Main components:
 
 \* Low signal attenuation compared with many copper systems
 
-**### Disadvantages**
+### Disadvantages
 
 \* Higher installation cost
 
@@ -2372,7 +2372,7 @@ Main components:
 
 **---**
 
-**# Guided Media Comparison**
+# Guided Media Comparison
 
 \| Feature      | Twisted Pair  | Coaxial                        | Optical Fiber          |
 
@@ -2396,7 +2396,7 @@ Main components:
 
 **---**
 
-**# 10. UNGUIDED / WIRELESS MEDIA**
+# 10. UNGUIDED / WIRELESS MEDIA
 
 In unguided transmission, signals propagate through **\*\*air/free space\*\*** rather than a physical cable.
 
@@ -2410,9 +2410,9 @@ Your PPT includes:
 
 **---**
 
-**# 10.1 Radio Waves**
+# 10.1 Radio Waves
 
-**### Characteristics**
+### Characteristics
 
 \* Generally omnidirectional
 
@@ -2420,7 +2420,7 @@ Your PPT includes:
 
 \* Can provide wide-area coverage
 
-**### Applications**
+### Applications
 
 \* Radio broadcasting
 
@@ -2430,7 +2430,7 @@ Your PPT includes:
 
 \* Wireless communication
 
-**### Advantages**
+### Advantages
 
 \* Wide coverage
 
@@ -2438,7 +2438,7 @@ Your PPT includes:
 
 \* Useful for mobile communication
 
-**### Limitation**
+### Limitation
 
 Wireless signals can experience:
 
@@ -2452,9 +2452,9 @@ Wireless signals can experience:
 
 **---**
 
-**# 10.2 Infrared**
+# 10.2 Infrared
 
-**### Characteristics**
+### Characteristics
 
 \* Short-range
 
@@ -2462,7 +2462,7 @@ Wireless signals can experience:
 
 \* Does not normally penetrate walls effectively
 
-**### Applications**
+### Applications
 
 \* TV remote controls
 
@@ -2472,23 +2472,23 @@ Wireless signals can experience:
 
 \* Short-range device communication
 
-**### Advantage**
+### Advantage
 
 Less likely to interfere across rooms because walls limit propagation.
 
-**### Limitation**
+### Limitation
 
 Short range and obstruction sensitivity.
 
 **---**
 
-**# 10.3 Satellite Communication**
+# 10.3 Satellite Communication
 
-**### Definition**
+### Definition
 
 Satellite communication uses an artificial satellite as a **\*\*relay station\*\*** to receive, amplify/process where applicable, and retransmit communication signals between distant locations.
 
-**### Basic Diagram**
+### Basic Diagram
 
 \`\`\`text
 
@@ -2504,7 +2504,7 @@ Ground Station → Ground Station
 
 \`\`\`
 
-**### Applications**
+### Applications
 
 \* GPS
 
@@ -2514,7 +2514,7 @@ Ground Station → Ground Station
 
 \* International communication
 
-**### Advantages**
+### Advantages
 
 \* Very large geographical coverage
 
@@ -2522,7 +2522,7 @@ Ground Station → Ground Station
 
 \* Supports long-distance communication
 
-**### Limitations**
+### Limitations
 
 \* High propagation delay for some satellite orbits
 
@@ -2532,15 +2532,15 @@ Ground Station → Ground Station
 
 **---**
 
-**# 11. SWITCHING**
+# 11. SWITCHING
 
-**## Standard Examination Definition**
+## Standard Examination Definition
 
 **\*\*Switching\*\*** is the technique used in a communication network to transfer data from a source to a destination through intermediate networking nodes by selecting or establishing a path for communication.
 
 The PPT introduces switching as the mechanism for transferring data through intermediate network devices and identifies three techniques on **\*\*Pages 72–79\*\***.
 
-**### Main Types**
+### Main Types
 
 1\. **\*\*Circuit Switching\*\***
 
@@ -2550,13 +2550,13 @@ The PPT introduces switching as the mechanism for transferring data through inte
 
 **---**
 
-**# 11.1 Circuit Switching**
+# 11.1 Circuit Switching
 
-**### Definition**
+### Definition
 
 **\*\*Circuit switching\*\*** establishes a dedicated communication path between the sender and receiver before data transfer begins.
 
-**### Three Phases**
+### Three Phases
 
 \`\`\`text
 
@@ -2572,7 +2572,7 @@ The PPT introduces switching as the mechanism for transferring data through inte
 
 \`\`\`
 
-**### Working**
+### Working
 
 Suppose A wants to communicate with B:
 
@@ -2584,23 +2584,23 @@ A ---- S1 ---- S2 ---- S3 ---- B
 
 \`\`\`
 
-**### Step 1 — Connection Establishment**
+### Step 1 — Connection Establishment
 
 A dedicated path is established.
 
-**### Step 2 — Data Transfer**
+### Step 2 — Data Transfer
 
 Data travels through the established path.
 
-**### Step 3 — Connection Termination**
+### Step 3 — Connection Termination
 
 The path is released after communication ends.
 
-**### Example**
+### Example
 
 Traditional telephone networks.
 
-**### Advantages**
+### Advantages
 
 \* Dedicated path
 
@@ -2610,7 +2610,7 @@ Traditional telephone networks.
 
 \* Suitable for continuous communication
 
-**### Disadvantages**
+### Disadvantages
 
 \* Bandwidth can be wasted when the sender is idle
 
@@ -2620,13 +2620,13 @@ Traditional telephone networks.
 
 **---**
 
-**# 11.2 Packet Switching**
+# 11.2 Packet Switching
 
-**### Definition**
+### Definition
 
 **\*\*Packet switching\*\*** divides a message into smaller units called **\*\*packets\*\***, which are transmitted through a shared network and reassembled at the destination.
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -2674,7 +2674,7 @@ Reassembled Message
 
 \`\`\`
 
-**### Working**
+### Working
 
 1\. Original data is divided into packets.
 
@@ -2688,7 +2688,7 @@ Reassembled Message
 
 6\. Data is reassembled where required.
 
-**### Example**
+### Example
 
 The Internet uses packet-based communication.
 
@@ -2702,7 +2702,7 @@ Applications include:
 
 \* Cloud applications
 
-**### Advantages**
+### Advantages
 
 \* Efficient bandwidth utilization
 
@@ -2712,7 +2712,7 @@ Applications include:
 
 \* Suitable for bursty data
 
-**### Disadvantages**
+### Disadvantages
 
 \* Variable delay
 
@@ -2726,15 +2726,15 @@ Applications include:
 
 **---**
 
-**# 11.3 Message Switching**
+# 11.3 Message Switching
 
-**### Definition**
+### Definition
 
 In **\*\*message switching\*\***, the complete message is treated as one unit and is stored at an intermediate node before being forwarded to the next node.
 
 It is therefore called **\*\*store-and-forward switching\*\***.
 
-**### Diagram**
+### Diagram
 
 \`\`\`text
 
@@ -2766,7 +2766,7 @@ Receiver
 
 \`\`\`
 
-**### Working**
+### Working
 
 1\. Sender transmits the complete message.
 
@@ -2778,7 +2778,7 @@ Receiver
 
 5\. Process continues until destination is reached.
 
-**### Advantages**
+### Advantages
 
 \* No dedicated path required
 
@@ -2786,7 +2786,7 @@ Receiver
 
 \* Can store messages before forwarding
 
-**### Disadvantages**
+### Disadvantages
 
 \* High delay
 
@@ -2794,13 +2794,13 @@ Receiver
 
 \* Not suitable for real-time communication
 
-**### Example**
+### Example
 
 The PPT gives **\*\*email systems\*\*** as an example.
 
 **---**
 
-**# Circuit vs Packet vs Message Switching**
+# Circuit vs Packet vs Message Switching
 
 \| Feature               | Circuit Switching       | Packet Switching              | Message Switching               |
 
@@ -2826,9 +2826,9 @@ The PPT gives **\*\*email systems\*\*** as an example.
 
 **---**
 
-**# ⭐ MOST IMPORTANT EXAM COMPARISONS**
+# ⭐ MOST IMPORTANT EXAM COMPARISONS
 
-**## Hub vs Switch vs Router**
+## Hub vs Switch vs Router
 
 \| Feature      | Hub                 | Switch                     | Router               |
 
@@ -2850,7 +2850,7 @@ The PPT includes a direct comparison of these devices around **\*\*Page 17\*\***
 
 **---**
 
-**# ⭐ VERY IMPORTANT: DATA UNITS**
+# ⭐ VERY IMPORTANT: DATA UNITS
 
 Memorize this:
 
@@ -2872,7 +2872,7 @@ This is one of the easiest marks in an OSI question.
 
 **---**
 
-**# ⭐ OSI vs TCP/IP — MUST MEMORIZE**
+# ⭐ OSI vs TCP/IP — MUST MEMORIZE
 
 \`\`\`text
 
@@ -2902,17 +2902,17 @@ Physical ───────────┴ → Network Access
 
 **---**
 
-**# ⭐ SWITCHING — MUST MEMORIZE**
+# ⭐ SWITCHING — MUST MEMORIZE
 
-**### Circuit**
+### Circuit
 
 \> **\*\*Dedicated path\*\***
 
-**### Packet**
+### Packet
 
 \> **\*\*Data divided into packets\*\***
 
-**### Message**
+### Message
 
 \> **\*\*Complete message stored and forwarded\*\***
 
@@ -2926,7 +2926,7 @@ Memory:
 
 **---**
 
-**# ⭐ TRANSMISSION MEDIA — MUST MEMORIZE**
+# ⭐ TRANSMISSION MEDIA — MUST MEMORIZE
 
 \`\`\`text
 
@@ -2956,7 +2956,7 @@ Memory:
 
 **---**
 
-**# ⭐ PHYSICAL LAYER — MUST MEMORIZE**
+# ⭐ PHYSICAL LAYER — MUST MEMORIZE
 
 \> **\*\*Physical Layer = Transmission of raw bits over the physical medium.\*\***
 
@@ -2978,9 +2978,9 @@ Key terms:
 
 **---**
 
-**# ⭐ 2-MARK POTENTIAL QUESTIONS**
+# ⭐ 2-MARK POTENTIAL QUESTIONS
 
-**### Very Short Questions**
+### Very Short Questions
 
 1\. Define a computer network.
 
@@ -3038,7 +3038,7 @@ Key terms:
 
 **---**
 
-**# ⭐ 5-MARK POTENTIAL QUESTIONS**
+# ⭐ 5-MARK POTENTIAL QUESTIONS
 
 1\. Explain the characteristics of effective data communication.
 
@@ -3078,9 +3078,9 @@ Key terms:
 
 **---**
 
-**# ⭐ 7–10 MARK POTENTIAL QUESTIONS**
+# ⭐ 7–10 MARK POTENTIAL QUESTIONS
 
-**### Q1. Explain the OSI reference model in detail.**
+### Q1. Explain the OSI reference model in detail.
 
 For a 10-mark answer, draw:
 
@@ -3106,7 +3106,7 @@ Then explain the **\*\*function of each layer + examples + data units + devices 
 
 **---**
 
-**### Q2. Explain TCP/IP protocol architecture and compare it with OSI.**
+### Q2. Explain TCP/IP protocol architecture and compare it with OSI.
 
 Include:
 
@@ -3126,7 +3126,7 @@ Include:
 
 **---**
 
-**### Q3. Explain different network topologies with diagrams, advantages and disadvantages.**
+### Q3. Explain different network topologies with diagrams, advantages and disadvantages.
 
 Cover:
 
@@ -3142,7 +3142,7 @@ If your professor expects broader textbook coverage, you can additionally mentio
 
 **---**
 
-**### Q4. Explain transmission media and classify them into guided and unguided media.**
+### Q4. Explain transmission media and classify them into guided and unguided media.
 
 Include:
 
@@ -3168,7 +3168,7 @@ Unguided
 
 **---**
 
-**### Q5. Explain different switching techniques.**
+### Q5. Explain different switching techniques.
 
 Cover:
 
@@ -3188,51 +3188,51 @@ Cover:
 
 **---**
 
-**# 🔥 LAST-NIGHT REVISION SHEET**
+# 🔥 LAST-NIGHT REVISION SHEET
 
 If you have very little time, memorize these first:
 
-**### Network**
+### Network
 
 \> Interconnected devices that communicate and share resources.
 
-**### Protocol**
+### Protocol
 
 \> Set of rules governing communication between network entities.
 
-**### LAN**
+### LAN
 
 \> Small geographical area.
 
-**### MAN**
+### MAN
 
 \> City/metropolitan area.
 
-**### WAN**
+### WAN
 
 \> Large geographical area/countries/continents.
 
-**### Topologies**
+### Topologies
 
 \> **\*\*Bus — Star — Ring — Mesh\*\***
 
-**### OSI**
+### OSI
 
 \> **\*\*Application → Presentation → Session → Transport → Network → Data Link → Physical\*\***
 
-**### OSI Mnemonic**
+### OSI Mnemonic
 
 \> **\*\*All People Seem To Need Data Processing\*\***
 
-**### TCP/IP**
+### TCP/IP
 
 \> **\*\*Application → Transport → Internet → Network Access\*\***
 
-**### Data Units**
+### Data Units
 
 \> **\*\*Data → Segment/Datagram → Packet → Frame → Bits\*\***
 
-**### Devices**
+### Devices
 
 \> **\*\*Hub → Physical\*\***
 
@@ -3240,11 +3240,11 @@ If you have very little time, memorize these first:
 
 \> **\*\*Router → Network\*\***
 
-**### Physical Media**
+### Physical Media
 
 \> **\*\*Twisted Pair → Coaxial → Fiber → Radio → Infrared → Satellite\*\***
 
-**### Switching**
+### Switching
 
 \> **\*\*Circuit = Dedicated\*\***
 
@@ -3252,7 +3252,7 @@ If you have very little time, memorize these first:
 
 \> **\*\*Message = Whole message stored and forwarded\*\***
 
-**### Performance**
+### Performance
 
 $$
 
@@ -3274,45 +3274,45 @@ Remember:
 
 **---**
 
-**## ⚠️ Common Exam Confusions**
+## ⚠️ Common Exam Confusions
 
-**### 1. ISO vs OSI**
+### 1. ISO vs OSI
 
 **\*\*ISO\*\*** = organization
 
 **\*\*OSI\*\*** = networking reference model
 
-**### 2. MAC vs IP**
+### 2. MAC vs IP
 
 **\*\*MAC address → Data Link/local delivery\*\***
 
 **\*\*IP address → Network layer/routing\*\***
 
-**### 3. Frame vs Packet**
+### 3. Frame vs Packet
 
 **\*\*Frame → Layer 2\*\***
 
 **\*\*Packet → Layer 3\*\***
 
-**### 4. Switch vs Router**
+### 4. Switch vs Router
 
 **\*\*Switch → connects devices/networks at the link level using MAC-based forwarding\*\***
 
 **\*\*Router → connects IP networks and forwards packets using routing information\*\***
 
-**### 5. Transmission vs Propagation Delay**
+### 5. Transmission vs Propagation Delay
 
 **\*\*Transmission:\*\*** time to place packet bits onto link.
 
 **\*\*Propagation:\*\*** time for signal to travel through the medium.
 
-**### 6. TCP vs UDP**
+### 6. TCP vs UDP
 
 **\*\*TCP:\*\*** connection-oriented and reliable.
 
 **\*\*UDP:\*\*** connectionless with lower overhead and no TCP-style reliability guarantees.
 
-**### 7. Circuit vs Packet Switching**
+### 7. Circuit vs Packet Switching
 
 **\*\*Circuit:\*\*** dedicated path.
 
@@ -3320,7 +3320,7 @@ Remember:
 
 **---**
 
-**## 📌 What to Draw in the Exam**
+## 📌 What to Draw in the Exam
 
 For this Unit, practice these diagrams **\*\*at least once by hand\*\***:
 
@@ -3360,7 +3360,7 @@ For this Unit, practice these diagrams **\*\*at least once by hand\*\***:
 
 The university PPT itself uses diagrams heavily for the communication model, data-flow modes, topologies, network devices, and switching, so **\*\*diagram practice is worth prioritizing\*\*** rather than only memorizing definitions. The PPT's contents explicitly include topologies, OSI/TCP-IP, physical-layer responsibilities, performance metrics, transmission media, and switching techniques. 
 
-**### Highest-priority topics for tomorrow**
+### Highest-priority topics for tomorrow
 
 **\*\*OSI Model → TCP/IP → Topologies → Switching → Transmission Media → LAN/MAN/WAN → Physical Layer/Performance\*\***
 
