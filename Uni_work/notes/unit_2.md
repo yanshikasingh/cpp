@@ -1,3786 +1,1527 @@
-# C++ STL — Full Overview
+Absolutely. I’ll turn the uploaded **C++ STL lecture transcript** into **exam-ready notes**, keeping the concepts and examples from the source, but cleaning up the transcript errors and organizing everything so you can actually study from it. Pasted text
 
-## 1. Overview
+# C++ STL — Exam Notes with Examples
 
-The teacher gives a basic overview of the **C++ STL (Standard Template Library)** and explains the major parts that will be covered in upcoming lectures.
+## 1. What is STL?
 
-The main parts discussed are:
+**STL = Standard Template Library**
 
-1. Containers
-2. Iterators
-3. Algorithms
-4. Comparators
-5. Nested containers
-6. Important STL functions and techniques
+STL is a collection of **ready-made, reusable components** in C++ that help us implement common data structures and algorithms without writing everything from scratch.
 
-The teacher emphasizes that STL provides many **predefined and well-implemented components**, which can reduce a large amount of code to only a few lines.
+### Why use STL?
 
----
+- Reduces the amount of code.
+- Saves development time.
+- Provides optimized implementations.
+- Useful for competitive programming and interviews.
+- Provides commonly used **containers, algorithms and iterators**.
 
-## 2. Main Parts of STL
+### Main parts of STL
 
-### 2.1 Containers
+The lecture divides containers mainly into:
 
-Containers are described as **data structures provided inside STL**.
+1. **Sequence Containers**
+2. **Associative Containers**
+3. **Unordered Associative Containers**
+4. **Container Adaptors**
 
-The teacher divides the important containers into different categories.
-
-### Sequence Containers
-
-Examples mentioned include:
-
-* `vector`
-* Other sequence-container implementations
-
-The teacher explains that these containers maintain elements in a sequential manner.
-
-### Ordered Containers
-
-The teacher discusses containers such as:
-
-* `map`
-* `multimap`
-* `set`
-* `multiset`
-
-These containers maintain their values in an ordered manner, such as ascending or descending order.
-
-### Unordered Containers
-
-The teacher also mentions:
-
-* `unordered_map`
-* `unordered_set`
-
-These are discussed as another category of containers.
-
-### Important Point
-
-The teacher makes it clear that STL contains many more containers, but the containers discussed in the course are the ones considered important from the programming perspective.
+Pasted text
 
 ---
 
-## 3. Nested Containers
+# 2. Array
 
-STL containers can also be used inside other containers.
+An array stores multiple elements of the **same data type** in contiguous memory.
 
-Examples mentioned by the teacher include:
+### Declaration
 
-* `vector` inside `map`
-* `pair` inside `set`
-* Nested combinations of containers
+```cpp
+int arr[4] = {10, 20, 30, 40};
+```
 
-At first, these combinations may appear complicated, but the teacher explains that they become easier once the working of individual containers is understood.
-
-### Teacher's Intuition
-
-The important idea is to first understand how the individual containers work. Once that is clear, more complex combinations of containers can be used in programming problems.
-
----
-
-## 4. Iterators
-
-The teacher introduces **iterators** as something similar to pointers.
-
-With ordinary pointers:
-
-* A pointer can point to the address of a variable.
-* It can be used to access another variable through its address.
-
-For containers, iterators are used to point to elements of the container.
-
-The teacher describes them as being similar to pointers, but specifically implemented for working with container elements.
-
-### Pointer vs Iterator
-
-| Concept  | Teacher's Explanation                                              |
-| -------- | ------------------------------------------------------------------ |
-| Pointer  | Used to point to the address of a variable.                        |
-| Iterator | Similar to a pointer and used to point to elements of a container. |
-
----
-
-## 5. Continuous and Non-Continuous Storage
-
-The teacher discusses how different containers can have different ways of storing their elements.
-
-Some containers have elements implemented in a continuous manner, while in other containers the elements may not be stored continuously.
-
-The teacher states that this difference is important for understanding why operations such as insertion behave differently for different containers.
-
-The upcoming lectures are intended to explain:
-
-* Continuous vs. non-continuous storage
-* Why insertion in `vector` has certain characteristics
-* Why similar operations behave differently in other containers
-
----
-
-## 6. Algorithms
-
-Algorithms are presented as an important part of STL.
-
-Many complex and commonly required algorithms have already been implemented inside C++ STL. Instead of writing the complete implementation manually, these predefined algorithms can be used directly.
-
-The teacher emphasizes that these implementations are already optimized and can make programming problems easier.
-
----
-
-## 7. Binary Search and Related Algorithms
-
-The teacher mentions that STL contains implementations related to searching, including:
-
-* Binary search
-* Lower bound
-* Upper bound
-
-These algorithms are useful when working with containers and can provide efficient searching operations.
-
-The teacher also connects these algorithms with time complexity and explains that their implementations are designed to be efficient.
-
----
-
-## 8. Comparators
-
-Comparators are introduced as an important STL concept, especially for sorting and other operations.
-
-A comparator allows the programmer to define **how elements should be compared**.
-
-The teacher explains that custom comparison can be used when the required ordering is more complicated than ordinary ascending or descending order.
-
-### Custom Ordering
-
-A comparator can be used to specify:
-
-* Ascending order
-* Descending order
-* Ordering according to the first value
-* Ordering according to the second value
-* More complex ordering conditions
-
-For example, when dealing with two values, the sorting condition can be based on either the first value or the second value.
-
----
-
-## 9. Common STL Algorithms Mentioned
-
-The teacher mentions several algorithms that can be directly used with containers.
-
-### `max_element`
-
-Used to find the maximum element.
-
-### `min_element`
-
-Used to find the minimum element.
-
-### `reverse`
-
-Used to reverse the elements.
-
-### `count`
-
-Used to count occurrences of an element inside a container.
-
-The teacher emphasizes that instead of manually writing the logic for these operations, the predefined STL algorithms can be used directly.
-
----
-
-## 10. Other Algorithmic Operations
-
-The teacher also mentions operations such as:
-
-* Finding maximum values
-* Finding minimum values
-* Reversing elements
-* Counting elements
-* Finding the position of an element
-* Other predefined operations
-
-The overall purpose is to avoid repeatedly writing implementations for common operations when STL already provides them.
-
----
-
-## 11. STL as a Programming Tool
-
-The teacher describes the predefined algorithms and containers as useful tools that can significantly reduce the amount of code required.
-
-Instead of implementing a commonly required operation manually, the programmer can use the corresponding STL implementation.
-
-This is one of the major advantages emphasized throughout the lecture.
-
----
-
-## 12. Topics to Be Covered in Upcoming Lectures
-
-The teacher indicates that the upcoming lectures will go into more detail about:
-
-* Containers
-* Nested containers
-* Iterators
-* Continuous and non-continuous storage
-* Insertion behavior
-* Algorithms
-* Comparators
-* Searching-related algorithms
-* Other important STL algorithms
-
-These topics are intended to make programming problems easier to solve using STL.
-
----
-
-## 13. Important Points
-
-* STL provides predefined implementations that can reduce the amount of code required.
-* Containers are an important part of STL.
-* Containers can be divided into different categories.
-* `vector`, `map`, `set`, `multimap`, `multiset`, `unordered_map`, and `unordered_set` are mentioned.
-* Containers can be nested inside other containers.
-* Iterators are similar to pointers and are used with container elements.
-* STL provides many predefined algorithms.
-* `lower_bound` and `upper_bound` are mentioned in relation to searching.
-* Comparators can be used to define custom ordering.
-* Algorithms such as maximum, minimum, reverse, and count operations can be directly used.
-* The teacher emphasizes using the existing STL implementations instead of repeatedly writing common operations manually.
-
----
-
-## 14. Quick Revision
-
-### STL Main Components
+Indexing starts from `0`.
 
 ```text
-STL
-│
-├── Containers
-│   ├── Sequence Containers
-│   ├── Ordered Containers
-│   └── Unordered Containers
-│
-├── Iterators
-│
-└── Algorithms
-    └── Comparators / Custom Ordering
+Index:   0   1   2   3
+Value:  10  20  30  40
 ```
 
-### Remember
-
-* **Containers** → store/manage collections of elements.
-* **Iterators** → used to point to elements of containers.
-* **Algorithms** → predefined operations that can be applied to containers.
-* **Comparators** → help define custom ordering.
-* **Nested containers** → containers can be used inside other containers.
-* STL can significantly reduce the amount of code required for common programming operations.
-
-
-
-
-
-
-
-
-# C++ STL — Pairs and Vectors
-
-## 1. `pair` in C++
-
-A `pair` is an STL utility that stores **two related values together**.
-
-The two values can have:
-
-* The same data type
-* Different data types
-* User-defined types
-* Other STL containers
-
-For example:
+### Accessing an element
 
 ```cpp
-pair<int, string> p;
+cout << arr[2];
 ```
 
-Here:
-
-* `first` → stores the `int`
-* `second` → stores the `string`
-
-A `pair` is useful whenever two values logically belong together, such as:
+Output:
 
 ```text
-Student ID + Student Name
-City + PIN Code
-Index + Value
-Key + Associated Value
+30
 ```
 
-The source emphasizes using `pair` to maintain a relationship between two pieces of data.
-
----
-
-## 2. Declaring a `pair`
-
-### Basic Syntax
+### Size
 
 ```cpp
-pair<data_type1, data_type2> variable_name;
+cout << sizeof(arr) / sizeof(arr[0]);
 ```
 
-Example:
-
-```cpp
-pair<int, string> p;
-```
-
-This creates a pair containing:
+Output:
 
 ```text
-first  → int
-second → string
+4
 ```
 
-The two types do not have to be identical.
+### Time Complexity
 
-```cpp
-pair<int, double> p1;
-pair<string, int> p2;
-pair<char, bool> p3;
-```
+| Operation | Complexity |
+|---|---:|
+| Random access | O(1) |
+| Access by index | O(1) |
+| Search | O(n) |
+| Insertion | O(n) |
+| Deletion | O(n) |
 
-A pair can also contain more complex types, including containers.
+**Exam point:** Array provides **fast random access**, but its size is fixed.
 
 ---
 
-# 3. Initializing a `pair`
+# 3. Vector
 
-There are several ways to initialize a pair.
-
-### Method 1 — Assignment
+A **vector** is a dynamic array provided by STL.
 
 ```cpp
-pair<int, string> p;
-
-p.first = 10;
-p.second = "ABC";
-```
-
-### Method 2 — Brace Initialization
-
-```cpp
-pair<int, string> p = {10, "ABC"};
-```
-
-This is a concise and commonly used form.
-
-### Method 3 — `make_pair()`
-
-```cpp
-pair<int, string> p;
-
-p = make_pair(10, "ABC");
-```
-
-`make_pair()` constructs a pair from the supplied values.
-
----
-
-# 4. Accessing Elements of a `pair`
-
-A pair has two publicly accessible members:
-
-```cpp
-p.first
-p.second
-```
-
-Example:
-
-```cpp
-#include <iostream>
-#include <utility>
+#include <vector>
 using namespace std;
 
-int main()
-{
-    pair<int, string> p = {10, "ABC"};
-
-    cout << p.first << endl;
-    cout << p.second << endl;
-
-    return 0;
-}
-```
-
-Output:
-
-```text
-10
-ABC
-```
-
-### Important
-
-For a `pair`:
-
-```text
-first  → first stored value
-second → second stored value
-```
-
-There is no indexing such as:
-
-```cpp
-p[0]   // Incorrect
-p[1]   // Incorrect
-```
-
-Use `.first` and `.second`.
-
----
-
-# 5. Modifying a `pair`
-
-The values stored in a pair can be modified directly.
-
-```cpp
-pair<int, string> p = {10, "ABC"};
-
-p.first = 20;
-p.second = "XYZ";
-```
-
-Now:
-
-```text
-p.first  = 20
-p.second = "XYZ"
-```
-
----
-
-# 6. Why Use `pair`?
-
-Suppose an address consists of:
-
-```text
-City
-PIN Code
-```
-
-These two values are related.
-
-Instead of maintaining separate variables:
-
-```cpp
-string city;
-int pin;
-```
-
-they can be grouped:
-
-```cpp
-pair<string, int> address;
-```
-
-Example:
-
-```cpp
-pair<string, int> address = {"Indore", 452001};
-```
-
-Now both pieces of information remain associated.
-
-This becomes especially useful when storing many related records.
-
----
-
-# 7. `pair` with Loops
-
-A collection of pairs can be processed using a loop.
-
-For example:
-
-```cpp
-vector<pair<int, string>> students = {
-    {1, "Aman"},
-    {2, "Riya"},
-    {3, "Yanshika"}
-};
-
-for (int i = 0; i < students.size(); i++)
-{
-    cout << students[i].first << " "
-         << students[i].second << endl;
-}
-```
-
-Output:
-
-```text
-1 Aman
-2 Riya
-3 Yanshika
-```
-
-This demonstrates an important relationship:
-
-```text
-pair
-   ↓
-stores two related values
-
-vector
-   ↓
-stores multiple elements
-
-vector<pair<...>>
-   ↓
-stores multiple records, where each record contains two related values
-```
-
----
-
-# 8. Passing a `pair` to a Function
-
-A pair can be passed to a function like any other object.
-
-```cpp
-void printPair(pair<int, string> p)
-{
-    cout << p.first << " " << p.second << endl;
-}
-```
-
-Usage:
-
-```cpp
-pair<int, string> p = {10, "ABC"};
-
-printPair(p);
-```
-
-However, passing by value creates a copy.
-
-If copying should be avoided, pass the pair by reference:
-
-```cpp
-void printPair(const pair<int, string>& p)
-{
-    cout << p.first << " " << p.second << endl;
-}
-```
-
-This is particularly useful when the object is large.
-
----
-
-# 9. Copying a `pair`
-
-A pair can be copied using assignment:
-
-```cpp
-pair<int, string> p1 = {10, "ABC"};
-
-pair<int, string> p2 = p1;
-```
-
-Now `p2` contains its own values.
-
-Changing `p2` does not change `p1`:
-
-```cpp
-p2.first = 50;
-```
-
-`p1.first` remains `10`.
-
----
-
-# 10. Introduction to `vector`
-
-A `vector` is an STL container that stores elements in a **dynamically sized sequence**.
-
-Unlike a normal fixed-size array, a vector can automatically grow or shrink as elements are inserted or removed.
-
-Basic declaration:
-
-```cpp
 vector<int> v;
 ```
 
-This creates an empty vector of integers.
+Unlike an ordinary array, a vector can **grow and shrink dynamically**. Pasted text
 
-The source contrasts vectors with ordinary arrays and emphasizes that the vector's size can change dynamically.
-
----
-
-# 11. Declaring a Vector
-
-### Empty Vector
+## Creating a vector
 
 ```cpp
-vector<int> v;
-```
-
-### Vector with a Fixed Initial Size
-
-```cpp
-vector<int> v(5);
-```
-
-This creates a vector containing five `int` elements, value-initialized to `0`.
-
-Conceptually:
-
-```text
-[0][0][0][0][0]
-```
-
-### Vector with Size and Initial Value
-
-```cpp
-vector<int> v(5, 10);
-```
-
-Conceptually:
-
-```text
-[10][10][10][10][10]
-```
-
-This is useful when the vector should initially contain repeated values.
-
----
-
-# 12. Vector with an Initializer List
-
-A vector can be initialized directly with values:
-
-```cpp
-vector<int> v = {10, 20, 30, 40, 50};
-```
-
-The vector initially contains:
-
-```text
-10 20 30 40 50
-```
-
-This provides a convenient way to create a vector with known initial elements.
-
----
-
-# 13. Adding Elements — `push_back()`
-
-The most basic way to add an element to the end of a vector is:
-
-```cpp
-push_back()
-```
-
-Example:
-
-```cpp
-vector<int> v;
-
-v.push_back(10);
-v.push_back(20);
-v.push_back(30);
-```
-
-The vector becomes:
-
-```text
-[10][20][30]
-```
-
-Each call adds a new element at the end.
-
-### Syntax
-
-```cpp
-vector_name.push_back(value);
-```
-
-Example:
-
-```cpp
-v.push_back(40);
-```
-
-Result:
-
-```text
-[10][20][30][40]
+vector<int> v = {1, 2, 3, 4};
 ```
 
 ---
 
-# 14. Dynamic Growth of a Vector
+## `size()`
 
-One of the major advantages of a vector is that its number of elements can grow dynamically.
-
-Example:
+Returns the number of elements currently present.
 
 ```cpp
-vector<int> v;
-
-v.push_back(10);
-v.push_back(20);
-v.push_back(30);
-v.push_back(40);
-```
-
-There is no need to manually maintain the number of currently stored elements.
-
-The vector manages its storage internally.
-
----
-
-# 15. `size()` Function
-
-The `size()` function returns the **number of elements currently stored** in the vector.
-
-Syntax:
-
-```cpp
-v.size();
-```
-
-Example:
-
-```cpp
-vector<int> v;
-
-v.push_back(10);
-v.push_back(20);
-v.push_back(30);
-
 cout << v.size();
 ```
 
 Output:
 
 ```text
-3
+4
 ```
-
-### Important
-
-`size()` gives the number of actual elements currently present.
-
-It does **not** give the amount of allocated memory/capacity.
-
-The source specifically demonstrates obtaining the current number of elements using `size()`.
 
 ---
 
-# 16. Accessing Vector Elements
+## `capacity()`
 
-Vector elements can be accessed using indexing:
+Returns the amount of memory currently allocated for the vector.
 
 ```cpp
-v[index]
+cout << v.capacity();
 ```
+
+### Important difference
+
+**size = number of elements currently stored**
+
+**capacity = storage currently allocated**
 
 Example:
 
 ```cpp
-vector<int> v = {10, 20, 30, 40};
+vector<int> v;
 
-cout << v[0] << endl;
-cout << v[1] << endl;
-cout << v[2] << endl;
-cout << v[3] << endl;
+v.push_back(10);
 ```
 
-Output:
+Conceptually:
 
 ```text
-10
-20
-30
-40
+size     = 1
+capacity = allocated storage >= 1
 ```
 
-The first element is at index `0`.
-
-Therefore:
-
-```text
-Index:    0   1   2   3
-Value:   10  20  30  40
-```
+Pasted text
 
 ---
 
-# 17. Iterating Through a Vector
+# 4. `push_back()`
 
-A vector can be traversed using a normal `for` loop.
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-
-for (int i = 0; i < v.size(); i++)
-{
-    cout << v[i] << " ";
-}
-```
-
-Output:
-
-```text
-10 20 30 40
-```
-
-The vector's current size can therefore be used as the loop boundary.
-
----
-
-# 18. Removing the Last Element — `pop_back()`
-
-The function:
+Adds an element at the **end** of the vector.
 
 ```cpp
-pop_back()
+vector<int> v;
+
+v.push_back(10);
+v.push_back(20);
+v.push_back(30);
 ```
 
-removes the **last element** from the vector.
-
-Example:
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-
-v.pop_back();
-```
-
-Now:
+Vector:
 
 ```text
 10 20 30
 ```
 
-### Important
-
-`pop_back()`:
-
-* Removes the last element.
-* Does not take an argument.
-* Does not return the removed element.
-
-If you need the last value before removing it:
+### Example
 
 ```cpp
-int x = v.back();
-v.pop_back();
-```
-
----
-
-# 19. `push_back()` vs `pop_back()`
-
-| Function       | Purpose                    | Typical Complexity |
-| -------------- | -------------------------- | -----------------: |
-| `push_back(x)` | Adds `x` at the end        |   Amortized `O(1)` |
-| `pop_back()`   | Removes last element       |             `O(1)` |
-| `size()`       | Returns number of elements |             `O(1)` |
-
-These are fundamental vector operations.
-
----
-
-# 20. Copying a Vector
-
-A vector can be copied directly:
-
-```cpp
-vector<int> v1 = {10, 20, 30};
-
-vector<int> v2 = v1;
-```
-
-Now `v2` contains the same elements:
-
-```text
-v1 → [10][20][30]
-
-v2 → [10][20][30]
-```
-
-But they are **independent vectors**.
-
-If:
-
-```cpp
-v2.push_back(40);
-```
-
-then:
-
-```text
-v1 → [10][20][30]
-
-v2 → [10][20][30][40]
-```
-
-Changing `v2` does not modify `v1`.
-
-The source explicitly highlights this distinction between copying a vector and sharing the same underlying object.
-
----
-
-# 21. Vector Copying Has a Cost
-
-Although vector assignment is convenient:
-
-```cpp
-vector<int> v2 = v1;
-```
-
-it is **not an `O(1)` operation** when copying `n` elements.
-
-The elements have to be copied into the new vector.
-
-Therefore:
-
-```text
-Copying n elements → O(n)
-```
-
-This matters when vectors are large.
-
-The source specifically warns that copying a vector is an operation with a time cost and should not be treated like a simple constant-time assignment.
-
----
-
-# 22. Passing a Vector to a Function
-
-Consider:
-
-```cpp
-void print(vector<int> v)
+for(int i = 0; i < 5; i++)
 {
-    for (int x : v)
-        cout << x << " ";
+    v.push_back(i);
 }
-```
-
-Calling:
-
-```cpp
-vector<int> v = {10, 20, 30};
-
-print(v);
-```
-
-passes the vector **by value**.
-
-This means a copy of the vector is created.
-
-For a large vector, this can unnecessarily increase time and memory usage.
-
----
-
-# 23. Passing a Vector by Reference
-
-If the function only needs to read the vector, use a constant reference:
-
-```cpp
-void print(const vector<int>& v)
-{
-    for (int x : v)
-        cout << x << " ";
-}
-```
-
-Now the vector is not copied.
-
-The function receives a reference to the original vector.
-
-This is especially important when working with large vectors.
-
-The source emphasizes that passing a vector by reference avoids the expensive copy operation.
-
----
-
-# 24. Modifying a Vector Through Reference
-
-If a function receives a non-const reference:
-
-```cpp
-void modify(vector<int>& v)
-{
-    v.push_back(100);
-}
-```
-
-then modifications made inside the function affect the original vector.
-
-Example:
-
-```cpp
-vector<int> v = {10, 20, 30};
-
-modify(v);
-```
-
-After the function call:
-
-```text
-v → [10][20][30][100]
-```
-
-### Comparison
-
-```cpp
-vector<int> v
-```
-
-→ copy is created.
-
-```cpp
-vector<int>& v
-```
-
-→ original vector is accessed directly.
-
-```cpp
-const vector<int>& v
-```
-
-→ original vector is accessed without copying, but the function cannot modify it through that reference.
-
----
-
-# 25. Vector with `pair`
-
-A particularly useful combination is:
-
-```cpp
-vector<pair<int, string>>
-```
-
-This represents a dynamic sequence where every element contains two related values.
-
-Example:
-
-```cpp
-vector<pair<int, string>> students;
-
-students.push_back({1, "Aman"});
-students.push_back({2, "Riya"});
-students.push_back({3, "Yanshika"});
-```
-
-Conceptually:
-
-```text
-[
-    {1, "Aman"},
-    {2, "Riya"},
-    {3, "Yanshika"}
-]
-```
-
-Access:
-
-```cpp
-cout << students[0].first << endl;
-cout << students[0].second << endl;
-```
-
-Output:
-
-```text
-1
-Aman
-```
-
-This combination is extremely useful for representing records consisting of two related values.
-
----
-
-# 26. Vector of Pairs — Traversal
-
-Using indexing:
-
-```cpp
-for (int i = 0; i < students.size(); i++)
-{
-    cout << students[i].first << " "
-         << students[i].second << endl;
-}
-```
-
-Or using a range-based loop:
-
-```cpp
-for (const auto& student : students)
-{
-    cout << student.first << " "
-         << student.second << endl;
-}
-```
-
----
-
-# 27. Choosing Between Array and Vector
-
-| Feature                     | Array   | Vector    |
-| --------------------------- | ------- | --------- |
-| Size                        | Fixed   | Dynamic   |
-| Automatic growth            | No      | Yes       |
-| `push_back()`               | No      | Yes       |
-| `pop_back()`                | No      | Yes       |
-| `size()` member function    | No      | Yes       |
-| STL container               | No      | Yes       |
-| Easy copying                | Yes     | Yes       |
-| Dynamic sequence management | Limited | Excellent |
-
-A vector is particularly useful when the number of elements is not known in advance or may change during program execution.
-
----
-
-# 28. Important Vector Functions
-
-| Function       | Purpose                               |
-| -------------- | ------------------------------------- |
-| `push_back(x)` | Adds `x` at the end                   |
-| `pop_back()`   | Removes the last element              |
-| `size()`       | Returns current number of elements    |
-| `front()`      | Returns the first element             |
-| `back()`       | Returns the last element              |
-| `empty()`      | Checks whether the vector is empty    |
-| `clear()`      | Removes all elements                  |
-| `at(i)`        | Accesses element with bounds checking |
-
-The fundamental operations emphasized here are `push_back()`, `pop_back()`, `size()`, and element access.
-
----
-
-# 29. Complexity Summary
-
-For the basic operations discussed:
-
-| Operation                |                      Complexity |
-| ------------------------ | ------------------------------: |
-| Access by index `v[i]`   |                          `O(1)` |
-| `size()`                 |                          `O(1)` |
-| `push_back()`            |                Amortized `O(1)` |
-| `pop_back()`             |                          `O(1)` |
-| Copy vector              |                          `O(n)` |
-| Pass vector by value     |              `O(n)` due to copy |
-| Pass vector by reference | `O(1)` for the reference itself |
-
-### Why is `push_back()` amortized `O(1)`?
-
-Most insertions at the end are constant time. Occasionally, if the vector needs more storage, it reallocates and moves/copies its existing elements. Over many insertions, the average cost per insertion is amortized `O(1)`.
-
----
-
-# 30. Important Memory Point
-
-A vector manages its storage dynamically, but the amount of memory available to a program is still limited.
-
-Therefore, a vector is **not unlimited**.
-
-Its practical maximum depends on:
-
-* Available memory
-* System architecture
-* Program environment
-* Allocation limits
-* Container implementation
-
-Do not treat implementation-specific memory limits mentioned for a particular environment as universal C++ rules.
-
----
-
-# 31. Common Mistakes
-
-### Mistake 1 — Using indexing with `pair`
-
-Incorrect:
-
-```cpp
-p[0]
-p[1]
-```
-
-Correct:
-
-```cpp
-p.first
-p.second
-```
-
----
-
-### Mistake 2 — Assuming `pop_back()` returns the removed value
-
-Incorrect:
-
-```cpp
-int x = v.pop_back();
-```
-
-Correct:
-
-```cpp
-int x = v.back();
-v.pop_back();
-```
-
----
-
-### Mistake 3 — Passing a large vector by value unnecessarily
-
-Avoid:
-
-```cpp
-void process(vector<int> v)
-```
-
-when the function only needs to read it.
-
-Prefer:
-
-```cpp
-void process(const vector<int>& v)
-```
-
----
-
-### Mistake 4 — Assuming vector copies share data
-
-```cpp
-vector<int> a = {1, 2, 3};
-vector<int> b = a;
-```
-
-`a` and `b` are independent vectors.
-
-Changing `b` does not modify `a`.
-
----
-
-# 32. Pair vs Vector
-
-These two solve different problems.
-
-| `pair`                                       | `vector`                             |
-| -------------------------------------------- | ------------------------------------ |
-| Stores exactly two values                    | Stores a dynamic sequence of values  |
-| Values may have different types              | Elements normally have the same type |
-| Access using `.first` and `.second`          | Access using index or iterators      |
-| Represents a relationship between two values | Represents a collection              |
-| Example: `{ID, Name}`                        | Example: `{10, 20, 30, 40}`          |
-
-They can also be combined:
-
-```cpp
-vector<pair<int, string>>
-```
-
-which means:
-
-> A dynamic collection of two-value records.
-
----
-
-# 33. Complete Example
-
-```cpp
-#include <iostream>
-#include <vector>
-#include <string>
-using namespace std;
-
-void printStudents(const vector<pair<int, string>>& students)
-{
-    for (const auto& student : students)
-    {
-        cout << student.first << " "
-             << student.second << endl;
-    }
-}
-
-int main()
-{
-    vector<pair<int, string>> students;
-
-    students.push_back({1, "Aman"});
-    students.push_back({2, "Riya"});
-    students.push_back({3, "Yanshika"});
-
-    cout << "Number of students: "
-         << students.size() << endl;
-
-    printStudents(students);
-
-    students.pop_back();
-
-    cout << "\nAfter removing the last student:\n";
-
-    printStudents(students);
-
-    return 0;
-}
-```
-
-### Concept demonstrated
-
-```text
-pair
-  ↓
-stores ID + Name
-
-vector
-  ↓
-stores multiple pairs
-
-push_back()
-  ↓
-adds a new record
-
-size()
-  ↓
-gives number of records
-
-pop_back()
-  ↓
-removes the last record
-
-const reference
-  ↓
-avoids copying the vector while printing
-```
-
----
-
-# Quick Revision
-
-## `pair`
-
-```cpp
-pair<int, string> p;
-```
-
-Access:
-
-```cpp
-p.first
-p.second
-```
-
-Initialization:
-
-```cpp
-pair<int, string> p = {10, "ABC"};
-```
-
-or:
-
-```cpp
-p = make_pair(10, "ABC");
-```
-
-### Remember
-
-* Stores exactly **two values**.
-* The two values can have different types.
-* Use `.first` and `.second`.
-* Useful for maintaining relationships between two values.
-
----
-
-## `vector`
-
-Declaration:
-
-```cpp
-vector<int> v;
-```
-
-Initialization:
-
-```cpp
-vector<int> v = {10, 20, 30};
-```
-
-Add:
-
-```cpp
-v.push_back(40);
-```
-
-Remove last:
-
-```cpp
-v.pop_back();
-```
-
-Number of elements:
-
-```cpp
-v.size();
-```
-
-Access:
-
-```cpp
-v[0]
-```
-
-Copy:
-
-```cpp
-vector<int> b = a;
-```
-
-Read-only function parameter:
-
-```cpp
-void f(const vector<int>& v);
-```
-
-### Remember
-
-* Vector is dynamically sized.
-* Elements are stored in sequence.
-* Random access using `v[i]` is `O(1)`.
-* `push_back()` is amortized `O(1)`.
-* `pop_back()` is `O(1)`.
-* Copying a vector is `O(n)`.
-* Passing a vector by reference avoids copying.
-
----
-
-## Concept Relationship
-
-```text
-C++ STL
-│
-├── pair
-│   └── stores two related values
-│
-├── vector
-│   └── stores a dynamically sized sequence
-│
-└── vector<pair<...>>
-    └── stores multiple records,
-        each containing two related values
-```
-
-### One-Line Memory Trick
-
-> **`pair` groups two related values; `vector` manages a dynamic sequence; `vector<pair<...>>` combines both to store multiple two-value records.**
-
-
-
-
-
-
-
-
-
-
-
-
-
-# C++ STL — Nesting in Vectors
-
-## 1. What Is a Nested Vector?
-
-A **nested vector** is a vector whose elements are themselves vectors.
-
-For example:
-
-```cpp
-vector<vector<int>> v;
-```
-
-Here:
-
-* The outer `vector` stores multiple elements.
-* Each element of the outer vector is another `vector<int>`.
-* Therefore, each inner vector can contain a different number of integers.
-
-Conceptually:
-
-```text
-v
-│
-├── [10, 20]
-├── [30, 40, 50]
-└── [60]
-```
-
-The important idea is:
-
-```text
-vector
-   ↓
-contains vectors
-   ↓
-vector<vector<int>>
-```
-
-The source introduces nested vectors as a natural extension of using `pair` and vectors together.
-
----
-
-# 2. Declaring a Nested Vector
-
-### Basic Syntax
-
-```cpp
-vector<vector<int>> v;
-```
-
-This initially creates an **empty outer vector**.
-
-It does not yet contain any inner vectors.
-
-You can think of it as:
-
-```text
-v → [ ]
-```
-
----
-
-# 3. Adding Inner Vectors
-
-An entire vector can be inserted into the outer vector.
-
-For example:
-
-```cpp
-vector<vector<int>> v;
-
-v.push_back({1, 2});
-v.push_back({3, 4, 5});
-v.push_back({6});
-```
-
-Now:
-
-```text
-v
-│
-├── [1, 2]
-├── [3, 4, 5]
-└── [6]
-```
-
-Each element of the outer vector is itself a vector.
-
-The source demonstrates inserting vectors into the outer vector using `push_back()`.
-
----
-
-# 4. Initializing a Nested Vector Directly
-
-A nested vector can also be initialized directly:
-
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2},
-    {3, 4, 5},
-    {6}
-};
-```
-
-This creates three inner vectors:
-
-```text
-Index 0 → [1, 2]
-Index 1 → [3, 4, 5]
-Index 2 → [6]
-```
-
-Notice that the inner vectors **do not need to have the same size**.
-
-This is one of the useful properties of a nested `vector`.
-
----
-
-# 5. Accessing Elements of a Nested Vector
-
-Because there are two levels of vectors, two indices are required.
-
-Suppose:
-
-```cpp
-vector<vector<int>> v =
-{
-    {10, 20},
-    {30, 40, 50}
-};
-```
-
-To access `30`:
-
-```cpp
-v[1][0]
-```
-
-To access `50`:
-
-```cpp
-v[1][2]
-```
-
-Conceptually:
-
-```text
-v
-│
-├── index 0 → [10, 20]
-│              0   1
-│
-└── index 1 → [30, 40, 50]
-               0   1   2
-```
-
-Therefore:
-
-```text
-v[outer_index][inner_index]
-```
-
----
-
-# 6. Understanding the Two Levels
-
-Consider:
-
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2},
-    {3, 4, 5},
-    {6, 7, 8, 9}
-};
-```
-
-### First level
-
-```cpp
-v[0]
-```
-
-returns the first inner vector:
-
-```text
-[1, 2]
-```
-
-### Second level
-
-```cpp
-v[0][1]
-```
-
-returns the element at index `1` inside that inner vector:
-
-```text
-2
-```
-
-Similarly:
-
-```cpp
-v[2]
-```
-
-represents:
-
-```text
-[6, 7, 8, 9]
-```
-
-and:
-
-```cpp
-v[2][3]
-```
-
-represents:
-
-```text
-9
-```
-
----
-
-# 7. Printing a Nested Vector
-
-A nested vector requires a loop for each level.
-
-Example:
-
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2},
-    {3, 4, 5},
-    {6, 7, 8}
-};
-
-for (int i = 0; i < v.size(); i++)
-{
-    for (int j = 0; j < v[i].size(); j++)
-    {
-        cout << v[i][j] << " ";
-    }
-
-    cout << endl;
-}
-```
-
-Output:
-
-```text
-1 2
-3 4 5
-6 7 8
-```
-
-### Why are two loops required?
-
-The outer loop moves through the **inner vectors**.
-
-The inner loop moves through the **elements of the current inner vector**.
-
-```text
-Outer loop
-    ↓
-selects a vector
-
-Inner loop
-    ↓
-selects elements inside that vector
-```
-
-The source demonstrates printing nested vector elements by accessing the inner vector and then its individual elements.
-
----
-
-# 8. Nested Vectors with `push_back()`
-
-A nested vector is particularly useful because inner vectors can be built dynamically.
-
-Example:
-
-```cpp
-vector<vector<int>> v;
-
-vector<int> a;
-a.push_back(10);
-a.push_back(20);
-
-v.push_back(a);
-```
-
-Now:
-
-```text
-v
-└── [10, 20]
-```
-
-Another vector can then be created:
-
-```cpp
-vector<int> b;
-
-b.push_back(30);
-b.push_back(40);
-b.push_back(50);
-
-v.push_back(b);
-```
-
-Now:
-
-```text
-v
-├── [10, 20]
-└── [30, 40, 50]
-```
-
----
-
-# 9. Taking Input for a Nested Vector
-
-Nested vectors are useful when the number of inner vectors and their sizes are provided as input.
-
-Suppose the input describes several vectors.
-
-A general approach is:
-
-```cpp
-int n;
-cin >> n;
-
-vector<vector<int>> v(n);
-
-for (int i = 0; i < n; i++)
-{
-    int size;
-    cin >> size;
-
-    for (int j = 0; j < size; j++)
-    {
-        int x;
-        cin >> x;
-
-        v[i].push_back(x);
-    }
-}
-```
-
-Here:
-
-1. `n` determines the number of inner vectors.
-2. Each inner vector can have its own size.
-3. Values are inserted using `push_back()`.
-
-For example, conceptually:
-
-```text
-3
-2  10 20
-3  30 40 50
-1  60
-```
-
-produces:
-
-```text
-v
-├── [10, 20]
-├── [30, 40, 50]
-└── [60]
-```
-
-The source specifically discusses taking the number of vectors, then taking the size and elements of each individual vector.
-
----
-
-# 10. Printing Nested Vectors Using a Function
-
-A nested vector can be passed to a function.
-
-```cpp
-void printVector(const vector<vector<int>>& v)
-{
-    for (int i = 0; i < v.size(); i++)
-    {
-        for (int j = 0; j < v[i].size(); j++)
-        {
-            cout << v[i][j] << " ";
-        }
-
-        cout << endl;
-    }
-}
-```
-
-Call it using:
-
-```cpp
-printVector(v);
-```
-
-The parameter:
-
-```cpp
-const vector<vector<int>>& v
-```
-
-allows the function to access the original nested vector without making a copy.
-
----
-
-# 11. Nested Vector vs Fixed-Size 2D Array
-
-A normal two-dimensional array generally has a fixed structure:
-
-```cpp
-int arr[3][4];
-```
-
-This represents:
-
-```text
-3 rows × 4 columns
-```
-
-Every row has the same number of elements.
-
-A nested vector:
-
-```cpp
-vector<vector<int>> v;
-```
-
-can represent:
-
-```text
-[1, 2]
-[3, 4, 5]
-[6]
-```
-
-The rows can have different lengths.
-
-Therefore, a nested vector is useful when the structure is **not necessarily rectangular**.
-
----
-
-# 12. Vector of Pairs
-
-Another important nested/compound STL structure is:
-
-```cpp
-vector<pair<int, int>> v;
-```
-
-Here:
-
-* The outer container is a vector.
-* Every element of the vector is a pair.
-* Each pair contains two values.
-
-Example:
-
-```cpp
-vector<pair<int, int>> v =
-{
-    {1, 2},
-    {3, 4},
-    {5, 6}
-};
-```
-
-Conceptually:
-
-```text
-v
-├── pair {1, 2}
-├── pair {3, 4}
-└── pair {5, 6}
-```
-
-Access:
-
-```cpp
-v[0].first
-v[0].second
-```
-
-The source connects vectors and pairs and emphasizes that each element can itself be a compound object.
-
----
-
-# 13. Vector of Vectors of Pairs
-
-C++ allows multiple levels of nesting.
-
-For example:
-
-```cpp
-vector<vector<pair<int, int>>> v;
-```
-
-The structure becomes:
-
-```text
-vector
-│
-├── vector
-│   ├── pair
-│   ├── pair
-│   └── pair
-│
-└── vector
-    ├── pair
-    └── pair
-```
-
-Accessing an element requires following the structure step by step.
-
-For example:
-
-```cpp
-v[0][1].first
-```
-
-means:
-
-1. Select the first outer vector.
-2. Select the second pair inside it.
-3. Select the `first` value of that pair.
-
-The key principle is:
-
-> **Always determine what type each level represents before deciding which operation or member to use.**
-
----
-
-# 14. Choosing the Correct Operation at Each Level
-
-Consider:
-
-```cpp
-vector<vector<int>> v;
-```
-
-Then:
-
-```cpp
-v[i]
-```
-
-is a:
-
-```cpp
-vector<int>
-```
-
-Therefore, you can use vector operations on it:
-
-```cpp
-v[i].size();
-v[i].push_back(10);
-v[i].pop_back();
-```
-
-But:
-
-```cpp
-v[i][j]
-```
-
-is an:
-
-```cpp
-int
-```
-
-So you cannot use vector functions on `v[i][j]`.
-
-For example:
-
-```cpp
-v[i][j].push_back(10);   // Incorrect
-```
-
-because `v[i][j]` is an integer, not a vector.
-
----
-
-# 15. The Most Important Concept: Understand the Type
-
-For:
-
-```cpp
-vector<vector<int>> v;
-```
-
-the types at each level are:
-
-```text
-v
-↓
-vector<vector<int>>
-
-v[i]
-↓
-vector<int>
-
-v[i][j]
-↓
-int
-```
-
-For:
-
-```cpp
-vector<pair<int, int>> v;
-```
-
-the types are:
-
-```text
-v
-↓
-vector<pair<int, int>>
-
-v[i]
-↓
-pair<int, int>
-
-v[i].first
-↓
-int
-
-v[i].second
-↓
-int
-```
-
-This makes nested STL structures much easier to understand.
-
----
-
-# 16. Different Inner Vector Sizes
-
-One major advantage of nested vectors is that the inner vectors can have different sizes.
-
-Example:
-
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2, 3},
-    {4},
-    {5, 6},
-    {},
-    {7, 8, 9, 10}
-};
-```
-
-Their sizes are:
-
-```text
-v[0].size() → 3
-v[1].size() → 1
-v[2].size() → 2
-v[3].size() → 0
-v[4].size() → 4
-```
-
-Therefore, when traversing a nested vector, use:
-
-```cpp
-v[i].size()
-```
-
-for the inner loop rather than assuming every inner vector has the same size.
-
----
-
-# 17. Empty Inner Vectors
-
-An inner vector can also be empty:
-
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2},
-    {},
-    {3, 4}
-};
-```
-
-Here:
-
-```cpp
-v[1].size()
-```
-
-is:
-
-```text
-0
-```
-
-A loop such as:
-
-```cpp
-for (int j = 0; j < v[i].size(); j++)
-```
-
-simply executes zero times for that empty vector.
-
-This is one reason nested vectors are flexible.
-
----
-
-# 18. Adding Elements to a Specific Inner Vector
-
-Suppose:
-
-```cpp
-vector<vector<int>> v(3);
-```
-
-This creates three empty inner vectors:
-
-```text
-v
-├── []
-├── []
-└── []
-```
-
-You can add values independently:
-
-```cpp
-v[0].push_back(10);
-v[0].push_back(20);
-
-v[1].push_back(30);
-
-v[2].push_back(40);
-v[2].push_back(50);
-v[2].push_back(60);
 ```
 
 Result:
 
 ```text
-v
-├── [10, 20]
-├── [30]
-└── [40, 50, 60]
+0 1 2 3 4
 ```
-
-This demonstrates the independent dynamic nature of each inner vector.
 
 ---
 
-# 19. Practical Uses
+# 5. Vector Capacity Doubling
 
-Nested vectors are useful when data naturally has multiple levels.
+One important concept for exams:
 
-Examples include:
+When a vector's allocated capacity becomes insufficient, it generally:
 
-* Graph adjacency lists
-* Rows with different numbers of elements
-* Grouped data
-* Dynamic matrices
-* Lists of lists
-* Problems where each query contains a different number of values
+1. Allocates a larger memory block.
+2. Copies/moves the old elements.
+3. Releases the old storage.
+4. Continues using the new storage.
 
-A common competitive-programming representation is:
+The lecture illustrates this with capacity growing as elements are inserted. Pasted text
 
-```cpp
-vector<vector<int>> graph;
-```
-
-where:
+Example:
 
 ```text
-graph[i]
+Initially:
+size = 0
+capacity = 0
+
+After inserting:
+size = 1
+capacity = 1
+
+More elements:
+size = 2
+capacity may become 2
+
+Next expansion:
+capacity may become 4
 ```
 
-can represent the list of elements connected to or associated with `i`.
+**Important:** The exact growth factor is implementation-dependent; don't treat "always doubles" as a C++ language guarantee.
 
 ---
 
-# 20. Common Mistakes
+# 6. `front()` and `back()`
 
-### Mistake 1 — Treating a nested vector like a normal integer vector
+### `front()`
 
-For:
-
-```cpp
-vector<vector<int>> v;
-```
-
-this:
+Returns the first element.
 
 ```cpp
-cout << v[i];
+cout << v.front();
 ```
 
-does not print the individual integers inside the inner vector.
+### `back()`
 
-You need another level of traversal.
-
----
-
-### Mistake 2 — Using the wrong `.size()`
-
-For:
+Returns the last element.
 
 ```cpp
-vector<vector<int>> v;
+cout << v.back();
 ```
-
-these represent different things:
-
-```cpp
-v.size()
-```
-
-→ number of inner vectors.
-
-```cpp
-v[i].size()
-```
-
-→ number of elements inside the `i`-th inner vector.
-
----
-
-### Mistake 3 — Assuming all inner vectors have equal size
-
-This is not required:
-
-```text
-[1, 2]
-[3, 4, 5]
-[6]
-```
-
-Therefore, use:
-
-```cpp
-v[i].size()
-```
-
-when traversing each row.
-
----
-
-### Mistake 4 — Applying an operation to the wrong level
-
-For:
-
-```cpp
-vector<vector<int>> v;
-```
-
-`v[i]` is a vector, while `v[i][j]` is an integer.
-
-Always identify the type before applying an operation.
-
----
-
-# 21. Complete Example
-
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-void printVector(const vector<vector<int>>& v)
-{
-    for (int i = 0; i < v.size(); i++)
-    {
-        for (int j = 0; j < v[i].size(); j++)
-        {
-            cout << v[i][j] << " ";
-        }
-
-        cout << endl;
-    }
-}
-
-int main()
-{
-    vector<vector<int>> v;
-
-    v.push_back({1, 2});
-    v.push_back({3, 4, 5});
-    v.push_back({6, 7, 8});
-
-    printVector(v);
-
-    return 0;
-}
-```
-
-Output:
-
-```text
-1 2
-3 4 5
-6 7 8
-```
-
----
-
-# Quick Revision
-
-## Nested Vector
-
-```cpp
-vector<vector<int>> v;
-```
-
-means:
-
-> A vector whose elements are vectors of integers.
-
-### Add an inner vector
-
-```cpp
-v.push_back({1, 2, 3});
-```
-
-### Access an inner vector
-
-```cpp
-v[i]
-```
-
-### Access an individual element
-
-```cpp
-v[i][j]
-```
-
-### Number of inner vectors
-
-```cpp
-v.size()
-```
-
-### Number of elements in the `i`-th inner vector
-
-```cpp
-v[i].size()
-```
-
-### Add to a particular inner vector
-
-```cpp
-v[i].push_back(x);
-```
-
-### Remove from a particular inner vector
-
-```cpp
-v[i].pop_back();
-```
-
----
-
-## Important Type Relationship
-
-```text
-vector<vector<int>> v
-        │
-        ├── v[i]
-        │     ↓
-        │   vector<int>
-        │
-        └── v[i][j]
-              ↓
-             int
-```
-
-For a vector of pairs:
-
-```text
-vector<pair<int,int>> v
-        │
-        └── v[i]
-              ↓
-           pair<int,int>
-              │
-          ┌───┴───┐
-          ↓       ↓
-       .first   .second
-          ↓       ↓
-         int     int
-```
-
----
-
-# Concept Relationship Summary
-
-```text
-STL
-│
-├── pair
-│   └── stores two related values
-│
-├── vector
-│   └── stores a dynamic sequence
-│
-├── vector<pair<...>>
-│   └── dynamic sequence of pairs
-│
-└── vector<vector<...>>
-    └── dynamic sequence of vectors
-        │
-        ├── each inner vector can have
-        │   a different size
-        │
-        └── each level requires the
-            appropriate access operation
-```
-
-### One-Line Memory Trick
-
-> **In a nested vector, `v[i]` gives an inner vector, while `v[i][j]` gives an element inside that inner vector.**
-
-
-
-
-
-# C++ STL — Iterators
-
-## 1. What Is an Iterator?
-
-An **iterator** is an object that behaves similarly to a pointer and is used to **access and traverse elements of STL containers**.
-
-Iterators are especially important because not every STL container supports direct indexing.
-
-For example:
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-```
-
-A vector supports:
-
-```cpp
-v[0]
-v[1]
-v[2]
-```
-
-But containers such as `set` and `map` do not provide ordinary index-based access.
-
-Iterators provide a **common way to move through elements of different STL containers**.
-
----
-
-# 2. Why Are Iterators Needed?
-
-Consider a vector:
-
-```text
-[10] [20] [30] [40]
-```
-
-Because the elements are stored contiguously, indexing works:
-
-```cpp
-v[2]
-```
-
-But consider an ordered container such as a `set` or `map`.
-
-Its elements are organized using a tree-based structure rather than a simple contiguous array.
-
-Therefore, something like:
-
-```cpp
-s[2]
-```
-
-is not available.
-
-Iterators solve this problem.
-
-Instead of asking:
-
-> "Give me the element at index 2."
-
-we can say:
-
-> "Give me an iterator pointing to the beginning, then move the iterator to the next element."
-
-This allows containers with different internal structures to be traversed using a common mechanism.
-
----
-
-# 3. Basic Iterator Syntax
-
-For a container such as:
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-```
-
-an iterator can be declared as:
-
-```cpp
-vector<int>::iterator it;
-```
-
-The iterator type depends on the container.
-
-For a vector:
-
-```cpp
-vector<int>::iterator
-```
-
-For a set:
-
-```cpp
-set<int>::iterator
-```
-
-For a map:
-
-```cpp
-map<int, string>::iterator
-```
-
----
-
-# 4. `begin()` and `end()`
-
-Two fundamental iterator functions are:
-
-```cpp
-begin()
-end()
-```
-
-For a container `c`:
-
-```cpp
-c.begin()
-```
-
-returns an iterator pointing to the **first element**.
-
-```cpp
-c.end()
-```
-
-returns an iterator representing the position **just after the last element**.
-
-For:
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-```
-
-conceptually:
-
-```text
-        begin()                         end()
-           ↓                              ↓
-           10     20     30     40      [past-the-end]
-           ↑
-         first
-```
-
-### Important
-
-`end()` does **not** point to the last element.
-
-It points one position beyond the last element.
-
-Therefore:
-
-```cpp
-*end()
-```
-
-must not be used to access an element.
-
----
-
-# 5. Creating an Iterator
 
 Example:
 
 ```cpp
-vector<int> v = {10, 20, 30, 40};
+vector<int> v = {10,20,30,40};
 
-vector<int>::iterator it = v.begin();
+cout << v.front(); // 10
+cout << v.back();  // 40
+```
+
+---
+
+# 7. Updating Vector Elements
+
+You can directly access an element using its index.
+
+```cpp
+v[2] = 100;
+```
+
+Example:
+
+```cpp
+vector<int> v = {10,20,30};
+
+v[1] = 50;
 ```
 
 Now:
 
 ```text
-it → 10
+10 50 30
 ```
 
-The iterator points to the first element.
-
-To access the value it points to, use the dereference operator:
-
-```cpp
-cout << *it;
-```
-
-Output:
-
-```text
-10
-```
-
-The source explains this pointer-like behavior: an iterator points toward a container element, and `*` is used to obtain the value at that position.
+Random access is **O(1)**.
 
 ---
 
-# 6. Dereferencing an Iterator
+# 8. `clear()`
 
-The `*` operator is called the **dereference operator**.
-
-If:
+Removes all elements from the vector.
 
 ```cpp
-vector<int>::iterator it = v.begin();
+v.clear();
 ```
 
-then:
+After:
+
+```text
+size = 0
+```
+
+### Important
+
+`clear()` removes the elements, but it does **not necessarily reduce the capacity**.
+
+So:
+
+```text
+Before clear:
+size = 4
+capacity = 4
+
+After clear:
+size = 0
+capacity may still be 4
+```
+
+This distinction is specifically emphasized in the lecture. Pasted text
+
+---
+
+# 9. Initializing Vector with Size
+
+You can create a vector with a specified size.
 
 ```cpp
-*it
+vector<int> v(5);
 ```
 
-means:
+This creates:
 
-> Access the element currently pointed to by `it`.
+```text
+0 0 0 0 0
+```
 
-Example:
+You can also initialize all elements with a value:
 
 ```cpp
-cout << *it;
+vector<int> v(5, 10);
 ```
 
-If `it` points to `30`, the output is:
+Result:
+
+```text
+10 10 10 10 10
+```
+
+---
+
+# 10. Copying a Vector
+
+```cpp
+vector<int> v1 = {1,2,3,4,5};
+
+vector<int> v2(v1);
+```
+
+Now `v2` contains a copy of `v1`.
+
+---
+
+# 11. Deque
+
+**Deque = Double Ended Queue**
+
+It allows insertion and deletion from **both ends**.
+
+```cpp
+#include <deque>
+
+deque<int> dq;
+```
+
+Pasted text
+
+### Operations
+
+```cpp
+dq.push_back(10);
+dq.push_front(20);
+```
+
+Now:
+
+```text
+20 10
+```
+
+Remove from back:
+
+```cpp
+dq.pop_back();
+```
+
+Remove from front:
+
+```cpp
+dq.pop_front();
+```
+
+### Access
+
+```cpp
+dq.front();
+dq.back();
+dq[1];
+```
+
+Deque also supports random access.
+
+---
+
+# 12. List
+
+`list` is a **doubly linked list** in C++ STL.
+
+```cpp
+#include <list>
+
+list<int> l;
+```
+
+The lecture describes it as using nodes connected through pointers. Pasted text
+
+Conceptually:
+
+```text
+10 <-> 20 <-> 30 <-> 40
+```
+
+Each node contains:
+
+```text
+[data | previous | next]
+```
+
+---
+
+## Important Properties of List
+
+- Dynamic size.
+- Efficient insertion/deletion when the position is known.
+- No random access like an array/vector.
+- Elements are not stored contiguously.
+
+### Example
+
+```cpp
+list<int> l;
+
+l.push_back(10);
+l.push_back(20);
+l.push_front(5);
+```
+
+Result:
+
+```text
+5 10 20
+```
+
+---
+
+# 13. Vector vs List
+
+| Feature | Vector | List |
+|---|---|---|
+| Structure | Dynamic array | Doubly linked list |
+| Random access | Yes | No |
+| Memory | Contiguous | Non-contiguous |
+| `[]` operator | Yes | No |
+| Insertion/deletion in middle | Costly | Efficient if iterator known |
+| Cache performance | Generally better | Generally worse |
+
+---
+
+# 14. Stack
+
+A **stack** follows:
+
+## LIFO — Last In First Out
+
+The element inserted **last** is removed **first**.
+
+Think of a stack of plates.
+
+```text
+     30  ← TOP
+     20
+     10
+```
+
+If we remove one plate:
+
+```text
+30 is removed first
+```
+
+Pasted text
+
+### Creating a stack
+
+```cpp
+#include <stack>
+
+stack<int> st;
+```
+
+### `push()`
+
+```cpp
+st.push(10);
+st.push(20);
+st.push(30);
+```
+
+Stack:
+
+```text
+30 ← top
+20
+10
+```
+
+### `top()`
+
+Returns the top element.
+
+```cpp
+cout << st.top();
+```
+
+Output:
 
 ```text
 30
 ```
 
-This is similar to using a pointer:
+### `pop()`
+
+Removes the top element.
 
 ```cpp
-int x = 10;
-int* p = &x;
-
-cout << *p;
+st.pop();
 ```
 
-Both use `*` to access the value being pointed to.
+Now:
+
+```text
+20 ← top
+10
+```
+
+### `empty()`
+
+Checks whether stack is empty.
+
+```cpp
+if(st.empty())
+    cout << "Empty";
+```
+
+### `size()`
+
+```cpp
+cout << st.size();
+```
 
 ---
 
-# 7. Moving an Iterator
-
-Iterators can be moved using increment:
+# 15. Stack Example
 
 ```cpp
-it++;
-```
+stack<string> st;
 
-or:
+st.push("A");
+st.push("B");
+st.push("C");
 
-```cpp
-++it;
-```
-
-For a vector:
-
-```text
-10   20   30   40
-↑
-it
-```
-
-After:
-
-```cpp
-it++;
-```
-
-the iterator moves to:
-
-```text
-10   20   30   40
-     ↑
-     it
-```
-
-After another increment:
-
-```text
-10   20   30   40
-          ↑
-          it
-```
-
-Therefore:
-
-```cpp
-*it
-```
-
-will now produce `30`.
-
-The source describes incrementing an iterator as moving it to the next element.
-
----
-
-# 8. Traversing a Container Using Iterators
-
-A standard iterator-based loop is:
-
-```cpp
-vector<int> v = {10, 20, 30, 40};
-
-for (vector<int>::iterator it = v.begin();
-     it != v.end();
-     it++)
-{
-    cout << *it << " ";
-}
+cout << st.top();
 ```
 
 Output:
 
 ```text
-10 20 30 40
-```
-
-### How the loop works
-
-Initially:
-
-```cpp
-it = v.begin();
-```
-
-so `it` points to `10`.
-
-The condition:
-
-```cpp
-it != v.end()
-```
-
-checks whether the iterator has reached the past-the-end position.
-
-Inside the loop:
-
-```cpp
-cout << *it;
-```
-
-prints the current element.
-
-Then:
-
-```cpp
-it++;
-```
-
-moves the iterator to the next element.
-
----
-
-# 9. Iterator vs Index
-
-For a vector, both approaches can be used.
-
-### Index-based
-
-```cpp
-for (int i = 0; i < v.size(); i++)
-{
-    cout << v[i];
-}
-```
-
-### Iterator-based
-
-```cpp
-for (vector<int>::iterator it = v.begin();
-     it != v.end();
-     it++)
-{
-    cout << *it;
-}
-```
-
-The iterator approach becomes particularly important for containers that do not support indexing.
-
----
-
-# 10. Why `it + 1` Is Not Universally Valid
-
-This is a very important distinction.
-
-For a vector, an iterator supports random-access operations, so:
-
-```cpp
-it + 1
-```
-
-is valid.
-
-However, not every iterator category supports this operation.
-
-For example, the source distinguishes **contiguous/sequence-like containers** from containers such as maps and sets whose elements are not stored in one continuous memory block.
-
-For a general iterator, the portable operation for moving one element forward is:
-
-```cpp
-++it;
-```
-
-Therefore:
-
-```cpp
-++it;
-```
-
-is the general iterator operation for moving to the next element.
-
----
-
-# 11. Iterator Movement in Different Containers
-
-Consider a vector:
-
-```text
-[10] [20] [30] [40]
-```
-
-Its elements are stored contiguously.
-
-For random-access iterators, moving from one element to the next can correspond to moving one position in memory.
-
-But containers such as `set` and `map` have a different internal organization.
-
-Conceptually:
-
-```text
-        20
-       /  \
-     10    30
-             \
-              40
-```
-
-The elements are not necessarily adjacent in memory.
-
-Therefore, you should not think of:
-
-```cpp
-it + 1
-```
-
-as simply "add one byte/one memory location."
-
-Instead:
-
-```cpp
-++it
-```
-
-means:
-
-> Move the iterator to the next element according to that container's iterator rules.
-
----
-
-# 12. `map` and `set` Need Iterators
-
-Suppose:
-
-```cpp
-set<int> s = {10, 20, 30, 40};
-```
-
-You cannot access elements like:
-
-```cpp
-s[0];    // invalid
-s[1];    // invalid
-```
-
-Instead:
-
-```cpp
-set<int>::iterator it = s.begin();
+C
 ```
 
 Then:
 
 ```cpp
-cout << *it;
+st.pop();
+
+cout << st.top();
 ```
 
-prints:
+Output:
+
+```text
+B
+```
+
+### Stack operations
+
+| Operation | Complexity |
+|---|---:|
+| push | O(1) |
+| pop | O(1) |
+| top | O(1) |
+| empty | O(1) |
+| size | O(1) |
+
+---
+
+# 16. Queue
+
+A **queue** follows:
+
+## FIFO — First In First Out
+
+The element inserted **first** is removed first.
+
+Real-life example:
+
+```text
+Person A → Person B → Person C
+```
+
+A came first, so A leaves first.
+
+Pasted text
+
+### Creating Queue
+
+```cpp
+#include <queue>
+
+queue<int> q;
+```
+
+### Insertion
+
+```cpp
+q.push(10);
+q.push(20);
+q.push(30);
+```
+
+Queue:
+
+```text
+10 → 20 → 30
+↑          ↑
+front      back
+```
+
+### `front()`
+
+```cpp
+cout << q.front();
+```
+
+Output:
 
 ```text
 10
 ```
 
-Move forward:
+### `back()`
 
 ```cpp
-++it;
+cout << q.back();
 ```
+
+Output:
+
+```text
+30
+```
+
+### `pop()`
+
+```cpp
+q.pop();
+```
+
+Removes `10`.
 
 Now:
 
-```cpp
-cout << *it;
+```text
+20 → 30
 ```
 
-prints:
+---
+
+# 17. Stack vs Queue
+
+| Stack | Queue |
+|---|---|
+| LIFO | FIFO |
+| Last inserted removed first | First inserted removed first |
+| `push()` | `push()` |
+| `pop()` removes top | `pop()` removes front |
+| `top()` | `front()` / `back()` |
+
+### Easy memory trick
+
+**Stack = Plates → LIFO**
+
+**Queue = Line → FIFO**
+
+---
+
+# 18. Priority Queue
+
+A **priority queue** removes elements according to their **priority**, rather than simply insertion order.
+
+By default, C++ provides a **max-heap priority queue**.
+
+That means the **largest element comes out first**. Pasted text
+
+### Creating Max Heap
+
+```cpp
+priority_queue<int> pq;
+```
+
+Insert:
+
+```cpp
+pq.push(10);
+pq.push(30);
+pq.push(20);
+```
+
+Conceptually:
 
 ```text
+30 ← highest priority
 20
+10
 ```
 
-This is one of the major reasons iterators are fundamental to STL.
-
----
-
-# 13. Iterator with `pair`
-
-Iterators become especially interesting with containers whose elements themselves contain multiple values.
-
-Consider:
-
 ```cpp
-vector<pair<int, int>> v =
-{
-    {1, 2},
-    {3, 4},
-    {5, 6}
-};
-```
-
-The iterator points to an entire `pair`.
-
-```cpp
-vector<pair<int, int>>::iterator it = v.begin();
-```
-
-Therefore:
-
-```cpp
-*it
-```
-
-is a:
-
-```cpp
-pair<int, int>
-```
-
-You can access its members using:
-
-```cpp
-(*it).first
-(*it).second
-```
-
-Example:
-
-```cpp
-cout << (*it).first << " ";
-cout << (*it).second;
+cout << pq.top();
 ```
 
 Output:
 
 ```text
-1 2
-```
-
-The source explicitly demonstrates dereferencing an iterator that points to a pair and then accessing `.first` and `.second`.
-
----
-
-# 14. `->` Operator with Iterators
-
-There is a shorter way to access members through an iterator.
-
-Instead of:
-
-```cpp
-(*it).first
-```
-
-you can write:
-
-```cpp
-it->first
-```
-
-Similarly:
-
-```cpp
-(*it).second
-```
-
-can be written as:
-
-```cpp
-it->second
-```
-
-Example:
-
-```cpp
-vector<pair<int, int>> v =
-{
-    {1, 2},
-    {3, 4}
-};
-
-for (auto it = v.begin(); it != v.end(); ++it)
-{
-    cout << it->first << " "
-         << it->second << endl;
-}
-```
-
-Output:
-
-```text
-1 2
-3 4
-```
-
----
-
-# 15. Why Does `it->first` Work?
-
-Suppose:
-
-```cpp
-it
-```
-
-points to a:
-
-```cpp
-pair<int, int>
+30
 ```
 
 Then:
 
 ```cpp
-*it
+pq.pop();
 ```
 
-gives the pair itself.
-
-Therefore:
-
-```cpp
-(*it).first
-```
-
-accesses its first member.
-
-The `->` operator provides shorthand:
-
-```cpp
-it->first
-```
-
-So:
+Next top:
 
 ```text
-it->first
+20
 ```
-
-and:
-
-```text
-(*it).first
-```
-
-are equivalent for this use.
-
-The source explicitly notes these two forms as interchangeable ways to access the member of the object pointed to by the iterator.
 
 ---
 
-# 16. Iterator Syntax Summary
+# 19. Min Heap
 
-For an iterator `it`:
+For a **minimum priority queue**:
 
-| Expression              | Meaning                                           |
-| ----------------------- | ------------------------------------------------- |
-| `it`                    | The iterator itself                               |
-| `*it`                   | Element currently pointed to                      |
-| `++it`                  | Move to next element                              |
-| `it++`                  | Move to next element after using current position |
-| `it->member`            | Access a member of the pointed-to object          |
-| `(*it).member`          | Dereference, then access member                   |
-| `it != container.end()` | Check whether iterator has reached the end        |
+```cpp
+priority_queue<int, vector<int>, greater<int>> pq;
+```
+
+Example:
+
+```cpp
+pq.push(30);
+pq.push(10);
+pq.push(20);
+```
+
+Now:
+
+```text
+10 ← highest priority
+20
+30
+```
+
+```cpp
+cout << pq.top();
+```
+
+Output:
+
+```text
+10
+```
+
+### Remember
+
+```text
+priority_queue<int>
+        ↓
+   MAX HEAP
+
+priority_queue<int, vector<int>, greater<int>>
+        ↓
+   MIN HEAP
+```
 
 ---
 
-# 17. `begin()` and `end()` Are Container-Specific
+# 20. Set
 
-The iterator type must correspond to the container.
+A `set` stores **unique elements**.
 
-For example:
-
-```cpp
-vector<int>::iterator
-```
-
-belongs to:
+If you insert the same element multiple times, it appears only once. Pasted text
 
 ```cpp
-vector<int>
+set<int> s;
+
+s.insert(5);
+s.insert(5);
+s.insert(10);
 ```
 
-while:
+Result:
 
-```cpp
-set<int>::iterator
+```text
+5 10
 ```
 
-belongs to:
+The duplicate `5` is ignored.
 
-```cpp
-set<int>
-```
+### Important properties
 
-and:
-
-```cpp
-map<int, string>::iterator
-```
-
-belongs to:
-
-```cpp
-map<int, string>
-```
-
-The iterator knows how to move according to the container it belongs to.
+- Stores unique values.
+- Elements are automatically sorted.
+- Duplicate values are not stored.
 
 ---
 
-# 18. Iterator and Container Type Relationship
-
-Think of the relationship as:
-
-```text
-Container
-    ↓
-provides
-    ↓
-Iterator
-    ↓
-points to
-    ↓
-Element
-```
-
-For:
+# 21. Set Example
 
 ```cpp
-vector<int> v;
+set<int> s;
+
+s.insert(30);
+s.insert(10);
+s.insert(20);
+s.insert(10);
 ```
 
-the relationship is:
+Output:
 
 ```text
-vector<int>
-    ↓
-vector<int>::iterator
-    ↓
-int
+10 20 30
 ```
 
-For:
+Even though `10` was inserted twice, it appears only once.
+
+---
+
+# 22. `find()` in Set
 
 ```cpp
-vector<pair<int, int>> v;
+auto it = s.find(20);
 ```
 
-the relationship is:
+If `20` exists, iterator points to it.
+
+If it doesn't exist:
+
+```cpp
+it == s.end()
+```
+
+Example:
+
+```cpp
+if(s.find(20) != s.end())
+{
+    cout << "Present";
+}
+else
+{
+    cout << "Not Present";
+}
+```
+
+---
+
+# 23. `count()` in Set
+
+`count()` checks whether an element exists.
+
+```cpp
+if(s.count(20))
+    cout << "Present";
+```
+
+For a normal `set`, the result is generally:
 
 ```text
-vector<pair<int,int>>
-    ↓
-iterator
-    ↓
-pair<int,int>
+0 → absent
+1 → present
 ```
 
-For:
+---
+
+# 24. `erase()`
+
+Removes an element.
+
+```cpp
+s.erase(20);
+```
+
+Example:
+
+```text
+Before:
+10 20 30
+
+After erase(20):
+10 30
+```
+
+---
+
+# 25. Set vs Unordered Set
+
+### `set`
+
+- Unique elements.
+- Sorted order.
+- Usually implemented using a balanced tree.
+- Operations are generally **O(log n)**.
+
+### `unordered_set`
+
+- Unique elements.
+- No sorted-order guarantee.
+- Hash-table based.
+- Average insertion/search/deletion: **O(1)**.
+
+Pasted text
+
+### Exam table
+
+| Feature | set | unordered_set |
+|---|---|---|
+| Duplicate | No | No |
+| Order | Sorted | No guaranteed order |
+| Typical implementation | Balanced BST | Hash table |
+| Search | O(log n) | O(1) average |
+
+---
+
+# 26. Map
+
+A `map` stores data in **key-value pairs**.
+
+Think:
+
+```text
+Key → Value
+```
+
+Example:
+
+```text
+1 → Yanshika
+2 → Rahul
+3 → Aman
+```
+
+Pasted text
+
+### Creating a map
 
 ```cpp
 map<int, string> m;
 ```
 
-the iterator points to the map's element type, which is represented as a key-value pair.
+### Inserting
+
+```cpp
+m[1] = "Yanshika";
+m[2] = "Rahul";
+m[3] = "Aman";
+```
 
 ---
 
-# 19. Why Iterators Are More General Than Indexing
+# 27. Important Property of Map
 
-Indexing assumes that a container provides a meaningful numeric position:
+**Every key is unique.**
+
+Example:
 
 ```cpp
-container[index]
+m[1] = "A";
+m[1] = "B";
 ```
 
-But iterators work based on **positions within the container**.
+The second assignment changes the value associated with key `1`.
 
-This makes them useful across many STL containers.
-
-For example:
+Final:
 
 ```text
-vector → iterator
-set    → iterator
-map    → iterator
+1 → B
 ```
 
-Even though these containers have very different internal structures, iterators provide a common traversal interface.
+A key cannot map to multiple different values in a normal `map`.
 
----
+However, **different keys can have the same value**.
 
-# 20. Common Mistakes
-
-### Mistake 1 — Dereferencing `end()`
-
-Incorrect:
-
-```cpp
-auto it = v.end();
-
-cout << *it;
-```
-
-`end()` is a past-the-end position and does not represent an element.
-
-Correct:
-
-```cpp
-auto it = v.begin();
-
-cout << *it;
-```
-
----
-
-### Mistake 2 — Forgetting `*`
-
-This:
-
-```cpp
-cout << it;
-```
-
-does not mean "print the element."
-
-Use:
-
-```cpp
-cout << *it;
-```
-
-to access the element.
-
----
-
-### Mistake 3 — Confusing `it` and `*it`
+Example:
 
 ```text
-it
-↓
-iterator
-
-*it
-↓
-element
+1 → Apple
+2 → Apple
 ```
 
-This distinction is fundamental.
+is valid.
 
 ---
 
-### Mistake 4 — Using `.` directly on an iterator
-
-If the iterator points to a pair:
+# 28. Accessing Map
 
 ```cpp
-it.first
-```
-
-is incorrect.
-
-Use:
-
-```cpp
-it->first
-```
-
-or:
-
-```cpp
-(*it).first
-```
-
----
-
-### Mistake 5 — Assuming every iterator supports `+`
-
-Do not assume:
-
-```cpp
-it + 1
-```
-
-works for every STL container.
-
-The general way to move forward is:
-
-```cpp
-++it
-```
-
----
-
-# 21. Iterator vs Pointer
-
-Iterators are often described as **pointer-like**, but an iterator is not necessarily a raw pointer.
-
-| Pointer                                | Iterator                                 |
-| -------------------------------------- | ---------------------------------------- |
-| Usually points to a memory address     | Represents a position in a container     |
-| Used mainly with memory objects/arrays | Designed for STL containers              |
-| `*p` accesses pointed value            | `*it` accesses current element           |
-| `p++` may move in memory               | `it++` moves according to iterator rules |
-| Raw memory concept                     | Container traversal abstraction          |
-
-The pointer analogy is useful for understanding dereferencing, but an iterator is a more general abstraction.
-
----
-
-# 22. Iterator Categories — Basic Idea
-
-Different containers provide different levels of iterator functionality.
-
-A simplified view:
-
-| Iterator capability    | Example           |
-| ---------------------- | ----------------- |
-| Forward movement       | `set`, `map`      |
-| Bidirectional movement | `set`, `map`      |
-| Random access          | `vector`          |
-| Contiguous access      | `vector`, `array` |
-
-The important idea at this stage is:
-
-> **Do not assume every iterator supports the same operations.**
-
-For basic traversal, the safest general operation is:
-
-```cpp
-++it;
-```
-
----
-
-# 23. Complete Example with `vector`
-
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-int main()
-{
-    vector<int> v = {10, 20, 30, 40};
-
-    vector<int>::iterator it;
-
-    for (it = v.begin(); it != v.end(); ++it)
-    {
-        cout << *it << " ";
-    }
-
-    return 0;
-}
+cout << m[1];
 ```
 
 Output:
 
 ```text
-10 20 30 40
+Yanshika
 ```
 
-### Flow
+You can also iterate:
+
+```cpp
+for(auto x : m)
+{
+    cout << x.first << " " << x.second << endl;
+}
+```
+
+Here:
 
 ```text
-it = begin()
-     ↓
-    10
-     ↓ ++it
-    20
-     ↓ ++it
-    30
-     ↓ ++it
-    40
-     ↓ ++it
-   end()
+x.first  = key
+x.second = value
 ```
 
-The loop stops when:
+---
+
+# 29. Map is Ordered
+
+A normal `map` keeps its keys in **sorted order**.
+
+Example:
+
+```cpp
+map<int,string> m;
+
+m[3] = "C";
+m[1] = "A";
+m[2] = "B";
+```
+
+Iteration gives:
+
+```text
+1 A
+2 B
+3 C
+```
+
+---
+
+# 30. Unordered Map
+
+`unordered_map` stores key-value pairs using hashing.
+
+```cpp
+unordered_map<int,string> m;
+```
+
+Properties:
+
+- Unique keys.
+- No guaranteed sorted order.
+- Average search/insertion/deletion: **O(1)**.
+
+---
+
+# 31. Map vs Unordered Map
+
+| Feature | map | unordered_map |
+|---|---|---|
+| Key uniqueness | Yes | Yes |
+| Order | Sorted by key | No guaranteed order |
+| Implementation | Balanced tree | Hash table |
+| Search | O(log n) | O(1) average |
+| Insertion | O(log n) | O(1) average |
+| Deletion | O(log n) | O(1) average |
+
+---
+
+# 32. STL Algorithms
+
+STL also provides ready-made algorithms.
+
+To use many standard algorithms:
+
+```cpp
+#include <algorithm>
+```
+
+The lecture introduces algorithms such as sorting, reversing, swapping, rotating and searching. Pasted text
+
+---
+
+# 33. `sort()`
+
+Sorts elements.
+
+```cpp
+vector<int> v = {5,2,7,1,3};
+
+sort(v.begin(), v.end());
+```
+
+Result:
+
+```text
+1 2 3 5 7
+```
+
+### Complexity
+
+```text
+O(n log n)
+```
+
+---
+
+# 34. `reverse()`
+
+Reverses a range.
+
+```cpp
+reverse(v.begin(), v.end());
+```
+
+Example:
+
+```text
+Before:
+1 2 3 4 5
+
+After:
+5 4 3 2 1
+```
+
+---
+
+# 35. `swap()`
+
+Swaps two values.
+
+```cpp
+int a = 10;
+int b = 20;
+
+swap(a,b);
+```
+
+After:
+
+```text
+a = 20
+b = 10
+```
+
+---
+
+# 36. `rotate()`
+
+Rotates elements within a range.
+
+Example:
+
+```text
+Before:
+1 2 3 4 5
+```
+
+Rotate left by one:
+
+```text
+2 3 4 5 1
+```
+
+Example:
+
+```cpp
+rotate(v.begin(), v.begin()+1, v.end());
+```
+
+---
+
+# 37. `binary_search()`
+
+Checks whether an element exists in a **sorted range**.
+
+```cpp
+vector<int> v = {1,2,3,4,5,6,7};
+
+bool found = binary_search(v.begin(), v.end(), 6);
+```
+
+Result:
+
+```text
+true
+```
+
+### Important
+
+The range must be sorted for `binary_search()` to give the intended result.
+
+Complexity:
+
+```text
+O(log n)
+```
+
+---
+
+# 38. `find()`
+
+Searches for an element.
+
+```cpp
+auto it = find(v.begin(), v.end(), 5);
+```
+
+If found:
+
+```cpp
+it != v.end()
+```
+
+If not found:
 
 ```cpp
 it == v.end()
 ```
 
----
-
-# 24. Complete Example with `vector<pair<int,int>>`
+Example:
 
 ```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
+if(find(v.begin(), v.end(), 5) != v.end())
+    cout << "Found";
+```
 
-int main()
-{
-    vector<pair<int, int>> v =
-    {
-        {1, 2},
-        {3, 4},
-        {5, 6}
-    };
+---
 
-    for (auto it = v.begin(); it != v.end(); ++it)
-    {
-        cout << it->first << " "
-             << it->second << endl;
-    }
+# 39. `max_element()` and `min_element()`
 
-    return 0;
-}
+### Maximum
+
+```cpp
+auto it = max_element(v.begin(), v.end());
+```
+
+### Minimum
+
+```cpp
+auto it = min_element(v.begin(), v.end());
+```
+
+To print:
+
+```cpp
+cout << *max_element(v.begin(), v.end());
+```
+
+The `*` dereferences the iterator.
+
+---
+
+# 40. `count()`
+
+Counts how many times a value appears in a range.
+
+```cpp
+vector<int> v = {1,2,2,3,2,4};
+
+cout << count(v.begin(), v.end(), 2);
 ```
 
 Output:
 
 ```text
-1 2
-3 4
-5 6
+3
 ```
-
-Here:
-
-```cpp
-it
-```
-
-points to a pair.
-
-Therefore:
-
-```cpp
-it->first
-```
-
-accesses the first value of that pair.
 
 ---
 
-# 25. Relationship with Nested Containers
+# 41. `lower_bound()`
 
-Iterators can also work with nested containers.
+Returns an iterator pointing to the **first position where the value can be inserted without violating sorted order**.
+
+For a sorted vector:
+
+```cpp
+vector<int> v = {1,2,4,4,6,8};
+
+auto it = lower_bound(v.begin(), v.end(), 4);
+```
+
+It points to the **first `4`**.
+
+---
+
+# 42. `upper_bound()`
+
+Returns an iterator pointing to the **first element greater than the given value**.
+
+```cpp
+auto it = upper_bound(v.begin(), v.end(), 4);
+```
 
 For:
 
-```cpp
-vector<vector<int>> v =
-{
-    {1, 2},
-    {3, 4, 5}
-};
+```text
+1 2 4 4 6 8
 ```
 
-an outer iterator points to:
-
-```cpp
-vector<int>
-```
-
-Then another iterator can traverse the inner vector.
-
-Conceptually:
+it points to:
 
 ```text
-outer iterator
-      ↓
-  vector<int>
-      ↓
-inner iterator
-      ↓
-     int
+6
 ```
 
-This follows the same fundamental principle:
+### Easy difference
 
-> An iterator points to an element of its container, and the type of that element determines what you can do after dereferencing it.
+```text
+lower_bound(x)
+↓
+first element >= x
+
+upper_bound(x)
+↓
+first element > x
+```
 
 ---
 
-# 26. Practical Use of Iterators
+# 43. Important Complexity Table
 
-Iterators become especially important when:
-
-* A container does not support indexing.
-* You want generic STL-style traversal.
-* You are working with `map` or `set`.
-* You need to access elements through algorithms.
-* You need to traverse a container without depending on its internal implementation.
-
-They form an important connection between **STL containers and STL algorithms**.
+| Data Structure / Operation | Complexity |
+|---|---:|
+| Array random access | O(1) |
+| Vector random access | O(1) |
+| Vector `push_back()` | O(1) amortized |
+| Stack push | O(1) |
+| Stack pop | O(1) |
+| Stack top | O(1) |
+| Queue push | O(1) |
+| Queue pop | O(1) |
+| Set search | O(log n) |
+| Set insert | O(log n) |
+| Set erase | O(log n) |
+| Map search | O(log n) |
+| Map insert | O(log n) |
+| Map erase | O(log n) |
+| Unordered set search | O(1) average |
+| Unordered map search | O(1) average |
+| `sort()` | O(n log n) |
+| `binary_search()` | O(log n) |
 
 ---
 
-# Quick Revision
+# 44. Most Important Exam Differences
 
-## Definition
+### Array vs Vector
 
-> An iterator is a pointer-like object used to access and traverse elements of an STL container.
-
-## Basic declaration
-
-```cpp
-vector<int>::iterator it;
+```text
+Array  → fixed size
+Vector → dynamic size
 ```
 
-## Begin
+### Vector vs List
 
-```cpp
-it = v.begin();
+```text
+Vector → contiguous memory + random access
+List   → linked nodes + no random access
 ```
 
-Points to the first element.
+### Stack vs Queue
 
-## End
-
-```cpp
-v.end()
+```text
+Stack → LIFO
+Queue → FIFO
 ```
 
-Represents the position immediately after the last element.
+### Queue vs Deque
 
-## Dereference
-
-```cpp
-*it
+```text
+Queue → insertion generally at back, removal from front
+Deque  → insertion/removal from both ends
 ```
 
-Gets the current element.
+### Set vs Map
 
-## Move forward
+```text
+Set → stores unique values
 
-```cpp
-++it;
+Map → stores unique keys + associated values
 ```
 
-Moves to the next element.
+### Set vs Unordered Set
 
-## Pair member access
-
-```cpp
-it->first
-it->second
+```text
+Set → sorted
+Unordered set → no guaranteed order
 ```
 
-Equivalent to:
+### Map vs Unordered Map
 
-```cpp
-(*it).first
-(*it).second
+```text
+Map → sorted keys
+Unordered map → no guaranteed order
 ```
 
-## Standard traversal
+### Max Heap vs Min Heap
+
+```text
+Max Heap → largest element has highest priority
+Min Heap → smallest element has highest priority
+```
+
+---
+
+# 45. One Complete STL Example
 
 ```cpp
-for (auto it = v.begin(); it != v.end(); ++it)
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main()
 {
-    cout << *it;
+    vector<int> v = {5, 2, 8, 1, 3};
+
+    sort(v.begin(), v.end());
+
+    cout << "Sorted: ";
+
+    for(int x : v)
+        cout << x << " ";
+
+    cout << endl;
+
+    if(binary_search(v.begin(), v.end(), 3))
+        cout << "3 Found";
+
+    return 0;
 }
 ```
 
----
-
-# Most Important Rules
+### Output
 
 ```text
-it
-↓
-iterator
-
-*it
-↓
-element
-
-++it
-↓
-next element
-
-begin()
-↓
-first element
-
-end()
-↓
-past-the-last position
-
-it->member
-↓
-member of the element pointed to by it
+Sorted: 1 2 3 5 8
+3 Found
 ```
-
-### Remember
-
-1. `begin()` points to the first element.
-2. `end()` points **after** the last element.
-3. Never dereference `end()`.
-4. `*it` gives the current element.
-5. `++it` moves to the next element.
-6. `it->member` accesses a member of the pointed-to object.
-7. Do not assume every iterator supports `it + 1`.
-8. Iterators allow containers without indexing, such as `map` and `set`, to be traversed.
 
 ---
 
-# Concept Relationship
+## ⭐ Last-Minute Revision Sheet
+
+Memorize these before the exam:
 
 ```text
-STL Container
-      │
-      ↓
-   Iterator
-      │
-      ↓
-points to an element
-      │
-      ↓
-   *iterator
-      │
-      ↓
-actual element
-      │
-      ├── int
-      │
-      ├── pair
-      │     ├── .first
-      │     └── .second
-      │
-      └── vector
-            └── can be traversed again
+STL
+│
+├── Containers
+│   │
+│   ├── Sequence
+│   │   ├── Array
+│   │   ├── Vector
+│   │   ├── Deque
+│   │   └── List
+│   │
+│   ├── Container Adaptors
+│   │   ├── Stack
+│   │   ├── Queue
+│   │   └── Priority Queue
+│   │
+│   └── Associative
+│       ├── Set
+│       └── Map
+│
+└── Algorithms
+    ├── sort()
+    ├── reverse()
+    ├── swap()
+    ├── find()
+    ├── count()
+    ├── binary_search()
+    ├── min_element()
+    ├── max_element()
+    ├── lower_bound()
+    ├── upper_bound()
+    └── rotate()
 ```
 
-> **Core idea:** An iterator represents a position in a container. `*it` gives the element at that position, while `++it` moves to the next element.
+**Most important concepts to practice:** `vector`, `deque`, `list`, `stack`, `queue`, `priority_queue`, `set`, `map`, and the common STL algorithms. The uploaded lecture specifically covers these structures and their common operations. Pasted text Pasted text Pasted text Pasted text
+
+If you're preparing for a **C++ exam**, these are the definitions + examples + differences I'd prioritize memorizing.
